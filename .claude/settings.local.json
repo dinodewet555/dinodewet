@@ -7,7 +7,10 @@
       "Bash(xargs sed *)",
       "Bash(npm install *)",
       "Bash(xxd /c/Users/farha/Downloads/dinodewet/public/google518f28c001775372.html)",
-      "Bash(xxd \"/c/Users/farha/Downloads/google518f28c001775372 \\(1\\).html\")"
+      "Bash(xxd \"/c/Users/farha/Downloads/google518f28c001775372 \\(1\\).html\")",
+      "Bash(xxd)",
+      "Bash(git -C /c/Users/farha/Downloads/dinodewet status --short)",
+      "Bash(git -C /c/Users/farha/Downloads/dinodewet show HEAD:src/components/ContactForm.tsx)"
     ]
   }
 }
