@@ -5,23 +5,36 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 
+type NavItem =
+  | { type: "section"; label: string }
+  | { type: "link"; href: string; label: string };
+
+// Flat link list — used only for active-state detection
 const serviceLinks = [
+  { href: "/geo-services-south-africa", label: "GEO Services South Africa" },
+  { href: "/ai-seo-services-south-africa", label: "AI SEO Services" },
+  { href: "/answer-engine-optimisation-services-south-africa", label: "Answer Engine Optimisation" },
   { href: "/semantic-seo", label: "Semantic SEO Web Development" },
   { href: "/semantic-seo-services", label: "Semantic SEO Services" },
   { href: "/web-development-services", label: "Web Development Services" },
   { href: "/ai-architect", label: "AI Architect" },
 ];
 
-const topLinks = [
-  { href: "/", label: "Home" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+// Structured list — used for dropdown rendering
+const serviceItems: NavItem[] = [
+  { type: "section", label: "Generative Engine Optimisation" },
+  { type: "link", href: "/geo-services-south-africa", label: "GEO Services South Africa" },
+  { type: "link", href: "/ai-seo-services-south-africa", label: "AI SEO Services" },
+  { type: "link", href: "/answer-engine-optimisation-services-south-africa", label: "Answer Engine Optimisation" },
+  { type: "section", label: "SEO & Development" },
+  { type: "link", href: "/semantic-seo", label: "Semantic SEO Web Development" },
+  { type: "link", href: "/semantic-seo-services", label: "Semantic SEO Services" },
+  { type: "link", href: "/web-development-services", label: "Web Development Services" },
+  { type: "link", href: "/ai-architect", label: "AI Architect" },
 ];
 
-const mobileLinks = [
+const topLinks = [
   { href: "/", label: "Home" },
-  ...serviceLinks,
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
@@ -110,23 +123,49 @@ export default function Navbar() {
                   background: "rgba(13,13,13,0.98)",
                   borderColor: "#1f1f1f",
                   backdropFilter: "blur(16px)",
-                  minWidth: "240px",
+                  minWidth: "290px",
                 }}
               >
-                {serviceLinks.map((link, i) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="flex items-center px-5 py-3.5 text-sm transition-colors duration-150 hover:text-white"
-                    style={{
-                      color: pathname === link.href ? "#ffffff" : "#a1a1a1",
-                      fontFamily: "var(--font-body)",
-                      borderBottom: i < serviceLinks.length - 1 ? "1px solid #1f1f1f" : "none",
-                    }}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                {serviceItems.map((item, i) => {
+                  const isLast = i === serviceItems.length - 1;
+                  if (item.type === "section") {
+                    return (
+                      <div
+                        key={`section-${item.label}`}
+                        className="px-5 py-2"
+                        style={{
+                          borderBottom: "1px solid #1f1f1f",
+                          borderTop: i > 0 ? "1px solid #1f1f1f" : "none",
+                        }}
+                      >
+                        <p
+                          className="text-xs font-medium uppercase tracking-widest"
+                          style={{
+                            color: "#555555",
+                            fontFamily: "var(--font-body)",
+                            letterSpacing: "0.1em",
+                          }}
+                        >
+                          {item.label}
+                        </p>
+                      </div>
+                    );
+                  }
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="flex items-center px-5 py-3.5 text-sm transition-colors duration-150 hover:text-white"
+                      style={{
+                        color: pathname === item.href ? "#ffffff" : "#a1a1a1",
+                        fontFamily: "var(--font-body)",
+                        borderBottom: !isLast ? "1px solid #1f1f1f" : "none",
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
               </div>
             )}
           </div>
@@ -211,20 +250,42 @@ export default function Navbar() {
                 className="rounded-xl border overflow-hidden mb-1"
                 style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}
               >
-                {serviceLinks.map((link, i) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="flex items-center px-4 py-3 text-sm"
-                    style={{
-                      color: pathname === link.href ? "#ffffff" : "#a1a1a1",
-                      fontFamily: "var(--font-body)",
-                      borderBottom: i < serviceLinks.length - 1 ? "1px solid #1f1f1f" : "none",
-                    }}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                {serviceItems.map((item, i) => {
+                  const isLast = i === serviceItems.length - 1;
+                  if (item.type === "section") {
+                    return (
+                      <div
+                        key={`mobile-section-${item.label}`}
+                        className="px-4 py-2"
+                        style={{
+                          borderBottom: "1px solid #1f1f1f",
+                          borderTop: i > 0 ? "1px solid #1f1f1f" : "none",
+                        }}
+                      >
+                        <p
+                          className="text-xs font-medium uppercase tracking-widest"
+                          style={{ color: "#555555", fontFamily: "var(--font-body)", letterSpacing: "0.1em" }}
+                        >
+                          {item.label}
+                        </p>
+                      </div>
+                    );
+                  }
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="flex items-center px-4 py-3 text-sm"
+                      style={{
+                        color: pathname === item.href ? "#ffffff" : "#a1a1a1",
+                        fontFamily: "var(--font-body)",
+                        borderBottom: !isLast ? "1px solid #1f1f1f" : "none",
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  );
+                })}
               </div>
             )}
 

@@ -1,5 +1,9 @@
 import Link from "next/link";
 
+type FooterItem =
+  | { type: "section"; label: string }
+  | { type: "link"; href: string; label: string };
+
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/blog", label: "Blog" },
@@ -7,11 +11,16 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-const serviceLinks = [
-  { href: "/semantic-seo", label: "Semantic SEO Web Development" },
-  { href: "/semantic-seo-services", label: "Semantic SEO Services" },
-  { href: "/web-development-services", label: "Web Development Services" },
-  { href: "/ai-architect", label: "AI Architect" },
+const serviceItems: FooterItem[] = [
+  { type: "section", label: "Generative Engine Optimisation" },
+  { type: "link", href: "/geo-services-south-africa", label: "GEO Services South Africa" },
+  { type: "link", href: "/ai-seo-services-south-africa", label: "AI SEO Services" },
+  { type: "link", href: "/answer-engine-optimisation-services-south-africa", label: "Answer Engine Optimisation" },
+  { type: "section", label: "SEO & Development" },
+  { type: "link", href: "/semantic-seo", label: "Semantic SEO Web Development" },
+  { type: "link", href: "/semantic-seo-services", label: "Semantic SEO Services" },
+  { type: "link", href: "/web-development-services", label: "Web Development Services" },
+  { type: "link", href: "/ai-architect", label: "AI Architect" },
 ];
 
 export default function Footer() {
@@ -63,16 +72,29 @@ export default function Footer() {
               Services
             </p>
             <div className="flex flex-col gap-3">
-              {serviceLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm transition-colors duration-200 hover:text-white"
-                  style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {serviceItems.map((item) => {
+                if (item.type === "section") {
+                  return (
+                    <p
+                      key={`footer-section-${item.label}`}
+                      className="text-xs font-medium uppercase tracking-widest mt-1"
+                      style={{ color: "#444444", fontFamily: "var(--font-body)", letterSpacing: "0.08em" }}
+                    >
+                      {item.label}
+                    </p>
+                  );
+                }
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-sm transition-colors duration-200 hover:text-white"
+                    style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
