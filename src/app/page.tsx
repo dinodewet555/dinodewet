@@ -305,6 +305,79 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* GEO Services */}
+      <section className="py-28 relative" style={{ background: "#0d0d0d", borderTop: "1px solid #1f1f1f", borderBottom: "1px solid #1f1f1f" }}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <SplitReveal>
+            <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
+              Generative Engine Optimisation
+            </p>
+            <h2
+              className="font-heading font-bold text-white mb-6"
+              style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.8rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}
+            >
+              Get Found by AI Search — Not Just Google
+            </h2>
+            <p className="mb-10" style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)", maxWidth: "640px" }}>
+              AI-powered search engines like ChatGPT, Google AI Overviews, and Perplexity are changing how people discover businesses. Generative Engine Optimisation (GEO) ensures your content is structured to be retrieved, cited, and recommended by these systems.
+            </p>
+          </SplitReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <GSAPReveal delay={0}>
+              <Link href="/geo-services-south-africa" className="block h-full">
+                <div className="card-hover h-full p-8 rounded-xl border flex flex-col gap-4" style={{ background: "#050505", borderColor: "#1f1f1f" }}>
+                  <h3 className="font-heading font-semibold text-white" style={{ fontSize: "1.05rem", letterSpacing: "-0.01em" }}>
+                    Generative Engine Optimisation Services
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>
+                    Structure your content for AI citation, passage ranking, and entity recognition in generative search results.
+                  </p>
+                  <div className="mt-auto flex items-center gap-2 text-sm" style={{ color: "#a1a1a1" }}>
+                    <span style={{ fontFamily: "var(--font-body)" }}>Learn more</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </div>
+              </Link>
+            </GSAPReveal>
+
+            <GSAPReveal delay={130}>
+              <Link href="/ai-seo-services-south-africa" className="block h-full">
+                <div className="card-hover h-full p-8 rounded-xl border flex flex-col gap-4" style={{ background: "#050505", borderColor: "#1f1f1f" }}>
+                  <h3 className="font-heading font-semibold text-white" style={{ fontSize: "1.05rem", letterSpacing: "-0.01em" }}>
+                    AI SEO Services
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>
+                    Optimise for AI-driven search visibility across large language models, retrieval systems, and generative answer engines.
+                  </p>
+                  <div className="mt-auto flex items-center gap-2 text-sm" style={{ color: "#a1a1a1" }}>
+                    <span style={{ fontFamily: "var(--font-body)" }}>Learn more</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </div>
+              </Link>
+            </GSAPReveal>
+
+            <GSAPReveal delay={260}>
+              <Link href="/answer-engine-optimisation-services-south-africa" className="block h-full">
+                <div className="card-hover h-full p-8 rounded-xl border flex flex-col gap-4" style={{ background: "#050505", borderColor: "#1f1f1f" }}>
+                  <h3 className="font-heading font-semibold text-white" style={{ fontSize: "1.05rem", letterSpacing: "-0.01em" }}>
+                    Answer Engine Optimisation Services
+                  </h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>
+                    Position your content to appear as the direct answer in featured snippets, AI Overviews, and voice search results.
+                  </p>
+                  <div className="mt-auto flex items-center gap-2 text-sm" style={{ color: "#a1a1a1" }}>
+                    <span style={{ fontFamily: "var(--font-body)" }}>Learn more</span>
+                    <ArrowRight size={14} />
+                  </div>
+                </div>
+              </Link>
+            </GSAPReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Why This Approach */}
       <section
         className="py-28 relative"
@@ -567,6 +640,55 @@ export default function HomePage() {
                 </Link>
               </div>
             </SplitReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* GEO Blog Cluster */}
+      <section className="py-28 relative" style={{ background: "#0d0d0d", borderTop: "1px solid #1f1f1f", borderBottom: "1px solid #1f1f1f" }}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <SplitReveal>
+            <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
+              GEO Knowledge Base
+            </p>
+            <h2
+              className="font-heading font-bold text-white mb-4"
+              style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.8rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}
+            >
+              Learn Generative Engine Optimisation
+            </h2>
+            <p className="mb-12" style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)", maxWidth: "560px" }}>
+              A complete resource covering how AI search works, how to optimise for it, and what it means for South African businesses.
+            </p>
+          </SplitReveal>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: "/blog/generative-engine-optimisation", title: "What Is Generative Engine Optimisation?", desc: "The complete guide to GEO — what it is, why it matters, and how to implement it." },
+              { href: "/blog/generative-engine-optimisation/geo-vs-seo", title: "GEO vs SEO", desc: "How generative engine optimisation differs from traditional SEO in signals, goals, and measurement." },
+              { href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", title: "How AI Search Engines Choose Sources", desc: "The six signals AI systems use to select, rank, and cite content in generated answers." },
+              { href: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", title: "What Makes Content Citation-Ready for AI Search?", desc: "Seven structural properties that make content retrievable and citable by AI search systems." },
+              { href: "/blog/generative-engine-optimisation/google-ai-overviews-and-geo", title: "How Google AI Overviews Change SEO and GEO", desc: "How AI Overviews work, what content gets selected, and how to optimise for inclusion." },
+              { href: "/blog/generative-engine-optimisation/geo-for-south-african-businesses", title: "Generative Engine Optimisation for South African Businesses", desc: "Why GEO matters for SA businesses and how to implement it for local and international visibility." },
+              { href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", title: "How Passage Ranking Affects AI Search Visibility", desc: "How Google's passage ranking connects to AI retrieval and what it means for content structure." },
+            ].map((post, i) => (
+              <GSAPReveal key={post.href} delay={i * 80}>
+                <Link href={post.href} className="block h-full">
+                  <div className="card-hover h-full p-6 rounded-xl border flex flex-col gap-3" style={{ background: "#050505", borderColor: "#1f1f1f" }}>
+                    <h3 className="font-heading font-semibold text-white" style={{ fontSize: "0.95rem", letterSpacing: "-0.01em", lineHeight: 1.3 }}>
+                      {post.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed flex-1" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
+                      {post.desc}
+                    </p>
+                    <div className="flex items-center gap-2 text-xs" style={{ color: "#a1a1a1" }}>
+                      <span style={{ fontFamily: "var(--font-body)" }}>Read article</span>
+                      <ArrowRight size={12} />
+                    </div>
+                  </div>
+                </Link>
+              </GSAPReveal>
+            ))}
           </div>
         </div>
       </section>

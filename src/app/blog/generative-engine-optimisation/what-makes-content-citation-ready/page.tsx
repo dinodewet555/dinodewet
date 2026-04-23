@@ -437,6 +437,8 @@ export default function CitationReadyContentPage() {
                   { label: "How AI Search Engines Choose Sources", href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", desc: "The retrieval signals that determine which sources AI systems select." },
                   { label: "How Passage Ranking Affects AI Visibility", href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", desc: "Passage-level indexing and its role in AI search." },
                   { label: "Answer Engine Optimisation Services", href: "/answer-engine-optimisation-services-south-africa", desc: "Professional AEO for South African businesses." },
+                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>
                     <div className="card-hover rounded-xl border p-5 flex items-center justify-between gap-4" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>

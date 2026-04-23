@@ -515,9 +515,10 @@ const faqs = [
 ];
 
 const relatedServices = [
+  { label: "Home", href: "/" },
+  { label: "About Dino de Wet", href: "/about" },
   { label: "GEO Services South Africa", href: "/geo-services-south-africa" },
   { label: "Answer Engine Optimisation", href: "/answer-engine-optimisation-services-south-africa" },
-  { label: "Semantic SEO Services", href: "/semantic-seo-services" },
   { label: "Semantic SEO Web Development", href: "/semantic-seo" },
   { label: "Web Development Services", href: "/web-development-services" },
 ];

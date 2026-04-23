@@ -1,28 +1,28 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import Link from "next/link";
-import { ArrowRight, Clock, Calendar, ChevronDown, BookOpen } from "lucide-react";
+import { ArrowRight, Clock, Calendar, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "GEO vs SEO: What Is the Difference? | Dino de Wet",
+  title: "SEO vs GEO: The Core Difference | Dino de Wet",
   description:
-    "GEO (Generative Engine Optimisation) and SEO serve different goals and use different signals. This guide explains the key differences, where they overlap, and how to implement both for maximum search visibility in 2026.",
+    "Learn the core difference between SEO and GEO, why SEO drives clicks, why GEO drives AI citation visibility, and why businesses now need both.",
   keywords: [
+    "SEO vs GEO",
     "GEO vs SEO",
-    "Generative Engine Optimisation vs SEO",
-    "AI SEO difference",
-    "GEO definition",
-    "SEO vs AI search",
-    "Answer Engine Optimisation vs SEO",
+    "Generative Engine Optimisation difference",
+    "AI SEO",
+    "Answer Engine Optimisation",
+    "AI search visibility",
     "GEO South Africa",
   ],
   alternates: {
     canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
   },
   openGraph: {
-    title: "GEO vs SEO: What Is the Difference?",
+    title: "SEO vs GEO: The Core Difference",
     description:
-      "A detailed comparison of Generative Engine Optimisation and traditional SEO — different goals, signals, and success metrics. Learn how to implement both.",
+      "Learn the core difference between SEO and GEO, why SEO drives clicks, why GEO drives AI citation visibility, and why businesses now need both.",
     url: "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
     type: "article",
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/images/semantic-seo-services.png",
         width: 1200,
         height: 630,
-        alt: "GEO vs SEO: What Is the Difference?",
+        alt: "SEO vs GEO: The Core Difference",
       },
     ],
   },
@@ -42,9 +42,9 @@ const articleSchema = {
     {
       "@type": "Article",
       "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo#article",
-      "headline": "GEO vs SEO: What Is the Difference?",
+      "headline": "SEO vs GEO: The Core Difference",
       "description":
-        "A detailed comparison of Generative Engine Optimisation and traditional SEO — different optimisation targets, ranking signals, content structures, and success metrics.",
+        "The core difference between SEO and GEO — why SEO drives clicks, why GEO drives AI citation visibility, and why businesses now need both.",
       "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
@@ -71,15 +71,15 @@ const articleSchema = {
         { "@type": "Thing", "name": "Search Engine Optimisation" },
         { "@type": "Thing", "name": "AI Search" },
       ],
-      "keywords": "GEO vs SEO, Generative Engine Optimisation, AI Search, Answer Engine Optimisation, AI Overviews",
+      "keywords": "SEO vs GEO, Generative Engine Optimisation, AI Search visibility, search strategy",
       "articleSection": "Generative Engine Optimisation",
-      "wordCount": 2800,
+      "wordCount": 3200,
     },
     {
       "@type": "WebPage",
       "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo#webpage",
       "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
-      "name": "GEO vs SEO: What Is the Difference?",
+      "name": "SEO vs GEO: The Core Difference",
       "isPartOf": { "@id": "https://dinodewet.tech/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -87,7 +87,7 @@ const articleSchema = {
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
           { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
           { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "GEO vs SEO: What Is the Difference?", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo" },
+          { "@type": "ListItem", "position": 4, "name": "SEO vs GEO: The Core Difference", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo" },
         ],
       },
     },
@@ -97,38 +97,42 @@ const articleSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is GEO replacing SEO?",
+          "name": "What is the main difference between SEO and GEO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text":
-              "No. GEO and SEO are complementary disciplines, not substitutes. Traditional SEO drives traffic through ranked link results, which remain the dominant click source. GEO earns brand presence in the AI-generated answer layer above those results. The strongest digital visibility strategy applies both — with semantic SEO foundations enabling GEO implementation.",
+            "text": "SEO focuses on ranking pages in search results. GEO focuses on making content usable inside AI-generated answers.",
           },
         },
         {
           "@type": "Question",
-          "name": "What are the main signals that differ between GEO and SEO?",
+          "name": "Does GEO replace SEO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text":
-              "SEO prioritises: backlink authority, keyword relevance, technical performance (Core Web Vitals), on-page entity density, and internal linking. GEO prioritises: passage extractability, factual specificity, citation signals (statistics with sources, named expert quotes), self-contained passage structure, FAQ schema, and source credibility as evaluated by AI retrieval models.",
+            "text": "No. GEO builds on SEO. Strong retrieval and ranking still matter.",
           },
         },
         {
           "@type": "Question",
-          "name": "Can the same content serve both SEO and GEO?",
+          "name": "Why is GEO becoming more important?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text":
-              "Yes, with deliberate structuring. Semantically optimised long-form content that includes clearly demarcated sections, definition-first headings, self-contained paragraphs, FAQ sections with complete standalone answers, and specific factual claims with attribution serves both traditional ranking and AI retrieval simultaneously. The key is passage architecture — writing so that each paragraph can be extracted independently.",
+            "text": "Because users increasingly see AI-generated summaries and answer layers before clicking through to websites.",
           },
         },
         {
           "@type": "Question",
-          "name": "How do you measure GEO success differently from SEO?",
+          "name": "What does SEO still do better?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text":
-              "SEO is measured primarily through ranked positions, organic traffic, and click-through rate. GEO is measured through AI citation frequency (how often your content appears in AI-generated responses), brand mention volume in AI platforms, Google Search Console impression data for AI Overview queries, and zero-click brand discovery metrics.",
+            "text": "SEO remains the core system for earning ranked visibility, impressions, and organic clicks.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What does GEO add?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GEO adds citation visibility, passage influence, and answer-layer presence in generative search.",
           },
         },
       ],
@@ -137,41 +141,19 @@ const articleSchema = {
 };
 
 const tableOfContents = [
-  { id: "definitions", label: "Definitions: GEO and SEO" },
-  { id: "optimisation-target", label: "Different Optimisation Targets" },
-  { id: "signals", label: "Different Ranking and Citation Signals" },
-  { id: "content-structure", label: "Different Content Structure Requirements" },
-  { id: "success-metrics", label: "Different Success Metrics" },
-  { id: "overlap", label: "Where GEO and SEO Overlap" },
-  { id: "combined-strategy", label: "A Combined GEO + SEO Strategy" },
-  { id: "takeaways", label: "Key Takeaways" },
-  { id: "faq", label: "FAQ" },
+  { id: "what-seo-is", label: "What SEO Is" },
+  { id: "what-geo-is", label: "What GEO Is" },
+  { id: "core-difference", label: "The Core Difference" },
+  { id: "how-seo-works", label: "How SEO Works" },
+  { id: "how-geo-works", label: "How GEO Works" },
+  { id: "seo-gets-clicks", label: "SEO Gets Clicks. GEO Builds Influence." },
+  { id: "both-needed", label: "Why Businesses Need Both" },
+  { id: "south-africa", label: "South African Opportunity" },
+  { id: "final-answer", label: "Final Answer" },
+  { id: "faq", label: "Frequently Asked Questions" },
 ];
 
-const faqs = [
-  {
-    question: "Is GEO replacing SEO?",
-    answer:
-      "No. GEO and SEO are complementary disciplines, not substitutes. Traditional SEO drives traffic through ranked link results, which remain the dominant click source. GEO earns brand presence in the AI-generated answer layer above those results. The strongest digital visibility strategy applies both — with semantic SEO foundations enabling GEO implementation.",
-  },
-  {
-    question: "What are the main signals that differ between GEO and SEO?",
-    answer:
-      "SEO prioritises: backlink authority, keyword relevance, technical performance (Core Web Vitals), on-page entity density, and internal linking. GEO prioritises: passage extractability, factual specificity, citation signals (statistics with sources, named expert quotes), self-contained passage structure, FAQ schema, and source credibility as evaluated by AI retrieval models.",
-  },
-  {
-    question: "Can the same content serve both SEO and GEO?",
-    answer:
-      "Yes, with deliberate structuring. Semantically optimised long-form content that includes clearly demarcated sections, definition-first headings, self-contained paragraphs, FAQ sections with complete standalone answers, and specific factual claims with attribution serves both traditional ranking and AI retrieval simultaneously. The key is passage architecture — writing so that each paragraph can be extracted independently.",
-  },
-  {
-    question: "How do you measure GEO success differently from SEO?",
-    answer:
-      "SEO is measured primarily through ranked positions, organic traffic, and click-through rate. GEO is measured through AI citation frequency (how often your content appears in AI-generated responses), brand mention volume in AI platforms, Google Search Console impression data for AI Overview queries, and zero-click brand discovery metrics.",
-  },
-];
-
-export default function GEOvsSEOPage() {
+export default function SEOvsGEOPage() {
   return (
     <>
       <script
@@ -192,18 +174,15 @@ export default function GEOvsSEOPage() {
                 Generative Engine Optimisation
               </Link>
               <span className="text-xs" style={{ color: "#3a3a3a" }}>/</span>
-              <span className="text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>GEO vs SEO</span>
+              <span className="text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>SEO vs GEO</span>
             </nav>
 
             <div className="flex items-center gap-3 mb-6">
-              <span
-                className="text-xs font-medium px-2.5 py-1 rounded border"
-                style={{ color: "#a1a1a1", borderColor: "#2a2a2a", background: "rgba(255,255,255,0.03)", fontFamily: "var(--font-body)" }}
-              >
+              <span className="text-xs font-medium px-2.5 py-1 rounded border" style={{ color: "#a1a1a1", borderColor: "#2a2a2a", background: "rgba(255,255,255,0.03)", fontFamily: "var(--font-body)" }}>
                 Generative Engine Optimisation
               </span>
               <span className="flex items-center gap-1.5 text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-                <Clock size={12} /> 9 min read
+                <Clock size={12} /> 12 min read
               </span>
               <span className="flex items-center gap-1.5 text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
                 <Calendar size={12} /> 23 April 2026
@@ -214,10 +193,10 @@ export default function GEOvsSEOPage() {
               className="font-heading font-bold text-white mb-6"
               style={{ fontSize: "clamp(2rem, 5vw, 3.8rem)", letterSpacing: "-0.03em", lineHeight: 1.1 }}
             >
-              GEO vs SEO: What Is the Difference?
+              SEO vs GEO: The Core Difference
             </h1>
             <p style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1.05rem", fontFamily: "var(--font-body)", maxWidth: "680px" }}>
-              Generative Engine Optimisation and traditional SEO share a common foundation in quality content, but they optimise for fundamentally different outcomes. One drives clicks from a ranked list. The other earns brand presence inside AI-generated answers. Both matter — and they require different signals, different structures, and different success metrics.
+              SEO and GEO are connected, but they do not work in the same way. SEO relies on ranking signals. GEO relies on content quality, structure, and extractability. That is the core difference — and why modern businesses need both.
             </p>
           </AnimatedSection>
         </div>
@@ -254,176 +233,137 @@ export default function GEOvsSEOPage() {
             <article className="lg:col-span-3">
               <AnimatedSection>
 
-                <section id="definitions" className="mb-14">
+                <section id="what-seo-is" className="mb-14">
                   <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Definitions: GEO and SEO
+                    What SEO Is
                   </h2>
                   <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
                     <p>
-                      <strong className="text-white">Search Engine Optimisation (SEO)</strong> is the practice of improving a website&apos;s visibility in search engine results pages (SERPs) through technical performance, content quality, backlink authority, and on-page relevance signals. The outcome of SEO is a ranked position in a list of links that a user can click to visit your website.
+                      SEO is the process of improving a website so it can rank in search engines for relevant queries. The goal is straightforward: the page should rank as highly as possible so users can find it and click through. In simple terms, SEO wins visibility in the list of links.
                     </p>
+                    <p>SEO focuses on:</p>
+                  </div>
+                  <div className="mt-4 grid grid-cols-2 gap-2">
+                    {["Crawlability and indexation", "Keyword relevance", "Internal linking", "Domain and page authority", "Topical coverage", "Page quality and search intent alignment"].map((item) => (
+                      <div key={item} className="flex items-start gap-2.5 p-3 rounded-lg border" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
+                        <div className="w-1 h-1 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#3a3a3a" }} />
+                        <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.5 }}>{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                <section id="what-geo-is" className="mb-14">
+                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+                    What GEO Is
+                  </h2>
+                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
                     <p>
-                      <strong className="text-white">Generative Engine Optimisation (GEO)</strong> is the practice of structuring and positioning digital content so that AI-powered search systems — including Google AI Overviews, ChatGPT search, and Perplexity — select your content as a citation source when generating answers. The outcome of GEO is your brand being named, quoted, or attributed within an AI-generated response.
-                    </p>
-                    <p>
-                      The critical distinction: SEO competes for a position in a list. GEO competes for inclusion in an answer. These are structurally different challenges requiring different approaches, even though both begin with high-quality content.
-                    </p>
-                    <p>
-                      Both disciplines are part of a complete search visibility strategy. For the full GEO framework, return to the{" "}
                       <Link href="/blog/generative-engine-optimisation" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
-                        GEO pillar guide
+                        Generative Engine Optimisation (GEO)
+                      </Link>{" "}
+                      is the process of improving content so it can be selected, cited, and reused in AI-generated search experiences. The goal is different from SEO. The page is not only trying to rank — it is trying to become part of the answer. In simple terms, GEO wins visibility inside the answer layer.
+                    </p>
+                    <p>GEO focuses on:</p>
+                  </div>
+                  <div className="mt-4 grid grid-cols-2 gap-2">
+                    {["Passage clarity and structure", "Factual density", "Semantic relevance", "Extractable answers", "Citation readiness", "Entity clarity", "Trust and usability inside AI summaries"].map((item) => (
+                      <div key={item} className="flex items-start gap-2.5 p-3 rounded-lg border" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
+                        <div className="w-1 h-1 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#3a3a3a" }} />
+                        <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.5 }}>{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+
+                <section id="core-difference" className="mb-14">
+                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+                    The Core Difference Between SEO and GEO
+                  </h2>
+                  <div className="flex flex-col gap-4 mb-6" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
+                    <p>The clearest distinction is this:</p>
+                    <p>
+                      SEO determines whether your page can appear in search results. GEO influences whether your content can appear inside AI&apos;s synthesised answers. That difference changes how content should be written, structured, and connected across a site.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border p-6 grid grid-cols-1 sm:grid-cols-2 gap-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
+                    <div>
+                      <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>SEO helps a search engine decide</p>
+                      <p className="text-sm font-heading font-semibold text-white" style={{ lineHeight: 1.4 }}>Which page should appear first?</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}>GEO helps a generative system decide</p>
+                      <p className="text-sm font-heading font-semibold text-white" style={{ lineHeight: 1.4 }}>Which content should be used in the answer?</p>
+                    </div>
+                  </div>
+                </section>
+
+                <section id="how-seo-works" className="mb-14">
+                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+                    How SEO Works
+                  </h2>
+                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
+                    <p>
+                      SEO works through ranking signals. Search engines look at relevance to the query, page quality, internal and external authority, semantic depth, user usefulness, and technical accessibility. Those signals determine where a page appears in the SERP.
+                    </p>
+                    <p>
+                      This is why SEO remains critical. Without visibility in retrieval and rankings, most pages never get a chance to compete at all. SEO still provides the foundation for modern search visibility. A page must be discoverable and rankable before it can do anything else.
+                    </p>
+                  </div>
+                </section>
+
+                <section id="how-geo-works" className="mb-14">
+                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+                    How GEO Works
+                  </h2>
+                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
+                    <p>
+                      GEO works through retrieval usefulness. Generative systems still need to retrieve pages, but they then apply another layer of selection. They look for content that is directly useful, clearly structured, easy to extract, semantically aligned, and trustworthy enough to cite.
+                    </p>
+                    <p>
+                      That means GEO depends less on positional ranking and more on answer usefulness. A passage can become highly visible in AI search because it is well structured and highly quotable, even if the page itself is not the strongest-looking result in a classic list of links. To understand{" "}
+                      <Link href="/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
+                        how AI search engines choose sources
                       </Link>
-                      .
-                    </p>
-                  </div>
-                </section>
-
-                <section id="optimisation-target" className="mb-14">
-                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Different Optimisation Targets
-                  </h2>
-                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
-                    <p>
-                      SEO optimises for ranking algorithms — the computational systems that evaluate pages and assign them positions in search results. These algorithms score pages across hundreds of signals including link authority, content quality, technical performance, and user engagement metrics.
+                      , the selection signals differ meaningfully from traditional ranking.
                     </p>
                     <p>
-                      GEO optimises for retrieval models — the AI systems that select passages from the web to synthesise into generated responses. Retrieval models evaluate passages on different criteria: factual accuracy, self-containment, specificity, source credibility, and semantic relevance to the query intent.
-                    </p>
-                    <p>
-                      This means optimising for GEO requires a different mindset. SEO asks: &ldquo;How do I make this page the most relevant and authoritative result for this keyword?&rdquo; GEO asks: &ldquo;How do I make each passage in this page the most extractable and trustworthy answer for this question?&rdquo;
-                    </p>
-                  </div>
-
-                  <div className="rounded-xl border p-6 mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                    <div>
-                      <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>SEO asks</p>
-                      <p className="text-sm italic" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
-                        &ldquo;How do I make this page rank at position 1 for this keyword?&rdquo;
-                      </p>
-                    </div>
-                    <div>
-                      <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}>GEO asks</p>
-                      <p className="text-sm italic" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
-                        &ldquo;How do I make each passage in this page extractable and trustworthy for AI-generated answers?&rdquo;
-                      </p>
-                    </div>
-                  </div>
-                </section>
-
-                <section id="signals" className="mb-14">
-                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Different Ranking and Citation Signals
-                  </h2>
-                  <div className="flex flex-col gap-4 mb-8" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
-                    <p>
-                      Traditional SEO and GEO both reward quality content, but they diverge significantly in the specific signals that drive performance.
-                    </p>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="rounded-xl border p-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                      <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>Primary SEO Signals</p>
-                      {[
-                        "Backlink authority (domain rating, referring domains)",
-                        "Keyword relevance and entity density",
-                        "Technical performance (Core Web Vitals, crawlability)",
-                        "On-page structure (H1–H6 hierarchy, schema markup)",
-                        "Internal linking and PageRank distribution",
-                        "User engagement signals (CTR, dwell time)",
-                      ].map((signal) => (
-                        <div key={signal} className="flex items-start gap-2.5 mb-2.5">
-                          <div className="w-1 h-1 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#3a3a3a" }} />
-                          <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>{signal}</p>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="rounded-xl border p-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                      <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#ffffff", fontFamily: "var(--font-body)" }}>Primary GEO Signals</p>
-                      {[
-                        "Passage self-containment and extractability",
-                        "Factual specificity (statistics, named entities, dates)",
-                        "Citation signals (sources, expert quotes, studies)",
-                        "Self-contained FAQ answers with complete context",
-                        "FAQPage and Article schema implementation",
-                        "Source credibility and topical authority classification",
-                      ].map((signal) => (
-                        <div key={signal} className="flex items-start gap-2.5 mb-2.5">
-                          <div className="w-1 h-1 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#ffffff" }} />
-                          <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>{signal}</p>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </section>
-
-                <section id="content-structure" className="mb-14">
-                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Different Content Structure Requirements
-                  </h2>
-                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
-                    <p>
-                      SEO content structure is page-centric. The goal is to build comprehensive, authoritative pages that cover a topic thoroughly and signal expertise to ranking algorithms through entity depth, semantic completeness, and internal linking.
-                    </p>
-                    <p>
-                      GEO content structure is passage-centric. The goal is to build individual paragraphs and sections that can each function as a complete, standalone answer to a specific question. A 3,000-word page optimised for GEO contains 15–20 independent, extractable passages — each structured for maximum AI retrievability.
-                    </p>
-                    <p>
-                      The practical implication is that GEO-optimised content tends to be more structured, more specific, and more factually dense than purely SEO-optimised content. Vague, hedged language (&ldquo;many experts believe&rdquo;, &ldquo;results may vary&rdquo;) deprioritises a passage for AI retrieval because it cannot be verified or synthesised into a factual answer.
-                    </p>
-                    <p>
-                      For the specific structural properties that make content citation-ready, read{" "}
+                      Understanding{" "}
                       <Link href="/blog/generative-engine-optimisation/what-makes-content-citation-ready" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
-                        What Makes Content Citation-Ready for AI Search?
-                      </Link>
+                        what makes content citation-ready
+                      </Link>{" "}
+                      is a core part of implementing GEO effectively.
                     </p>
                   </div>
                 </section>
 
-                <section id="success-metrics" className="mb-14">
+                <section id="seo-gets-clicks" className="mb-14">
                   <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Different Success Metrics
+                    SEO Gets Clicks. GEO Builds Influence.
                   </h2>
-                  <div className="flex flex-col gap-4 mb-8" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
+                  <div className="flex flex-col gap-4 mb-6" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
                     <p>
-                      Measuring SEO and GEO success requires different tools and different KPIs.
+                      This is one of the most useful ways to understand the difference. SEO gets you clicks through ranked search results. GEO gives you influence by helping your content appear inside AI-generated answers. Both matter because search is no longer only a blue-link environment.
+                    </p>
+                    <p>
+                      Users increasingly see the answer before they choose a link. A business that wins only rankings may still lose influence if AI systems use someone else&apos;s content to form the answer. That&apos;s why{" "}
+                      <Link href="/blog/generative-engine-optimisation/google-ai-overviews-and-geo" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
+                        Google AI Overviews
+                      </Link>{" "}
+                      change the equation for any business relying purely on traditional SEO.
                     </p>
                   </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="rounded-xl border p-6 grid grid-cols-1 sm:grid-cols-2 gap-4" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
                     {[
-                      {
-                        title: "SEO Metrics",
-                        light: true,
-                        items: [
-                          "Organic keyword rankings (position tracking)",
-                          "Organic traffic volume (sessions, users)",
-                          "Click-through rate from search results",
-                          "Backlink acquisition rate",
-                          "Core Web Vitals scores",
-                          "Crawl coverage and index status",
-                        ],
-                      },
-                      {
-                        title: "GEO Metrics",
-                        light: false,
-                        items: [
-                          "AI Overview impression frequency (Search Console)",
-                          "Brand mention volume in AI-generated responses",
-                          "Citation appearance rate across AI platforms",
-                          "Zero-click brand discovery impressions",
-                          "Share of voice in AI answer surfaces",
-                          "FAQ schema structured data performance",
-                        ],
-                      },
+                      { label: "SEO is", values: ["Click visibility", "List placement", "Ranking-driven"] },
+                      { label: "GEO is", values: ["Citation visibility", "Answer inclusion", "Influence-driven"] },
                     ].map((col) => (
-                      <div key={col.title} className="rounded-xl border p-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                        <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: col.light ? "#a1a1a1" : "#ffffff", fontFamily: "var(--font-body)" }}>
-                          {col.title}
-                        </p>
-                        {col.items.map((item) => (
-                          <div key={item} className="flex items-start gap-2.5 mb-2.5">
-                            <div className="w-1 h-1 rounded-full flex-shrink-0 mt-1.5" style={{ background: col.light ? "#3a3a3a" : "#ffffff" }} />
-                            <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>{item}</p>
+                      <div key={col.label}>
+                        <p className="text-xs font-medium uppercase tracking-widest mb-3" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>{col.label}</p>
+                        {col.values.map((v) => (
+                          <div key={v} className="flex items-center gap-2 mb-2">
+                            <div className="w-1 h-1 rounded-full" style={{ background: "#3a3a3a" }} />
+                            <p className="text-sm text-white" style={{ fontFamily: "var(--font-body)" }}>{v}</p>
                           </div>
                         ))}
                       </div>
@@ -431,89 +371,57 @@ export default function GEOvsSEOPage() {
                   </div>
                 </section>
 
-                <section id="overlap" className="mb-14">
+                <section id="both-needed" className="mb-14">
                   <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Where GEO and SEO Overlap
+                    Why Businesses Need Both
                   </h2>
                   <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
                     <p>
-                      Despite their differences, GEO and SEO share significant common ground — and this overlap is where the most leverage exists for content strategies that need to serve both objectives simultaneously.
+                      Businesses now need both because search has split into two layers. The first layer is traditional search visibility. The second layer is answer-layer visibility. If you only focus on SEO, you may rank but still lose influence in AI search. If you only focus on GEO, you may write answer-friendly content that never gets retrieved strongly enough to matter.
                     </p>
                     <p>
-                      <strong className="text-white">Topical authority</strong> benefits both. A website recognised by search engines as a topical authority on a subject is more likely to rank highly for relevant queries (SEO) and more likely to have its content selected as a citation source by AI retrieval models (GEO).
+                      The best strategy is to build strong SEO foundations and strong GEO usability. That combination gives you reach and influence. SEO helps your pages rank today. GEO helps your content stay visible in AI-driven search tomorrow. Together they help a business rank in classic search, support passage extraction, improve citation visibility, strengthen topical authority, and build a more future-ready content system.
                     </p>
                     <p>
-                      <strong className="text-white">Entity clarity</strong> benefits both. Clear entity names, entity definitions, and entity relationships help ranking algorithms assess relevance (SEO) and help AI retrieval models understand what the content is about (GEO).
-                    </p>
-                    <p>
-                      <strong className="text-white">Structured data</strong> benefits both. Schema markup improves how search engines parse content (SEO) and signals to AI systems that content has been formally structured for machine parsing (GEO). FAQPage schema in particular correlates with both featured snippet appearance and AI Overview citation frequency.
-                    </p>
-                    <p>
-                      <strong className="text-white">Content quality</strong> benefits both. Accurate, well-researched content with specific factual claims performs in traditional SEO through E-E-A-T signals and performs in GEO through citation worthiness.
-                    </p>
-                    <p>
-                      For how AI systems evaluate source quality specifically, read{" "}
-                      <Link href="/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
-                        How AI Search Engines Choose Sources
+                      Explore{" "}
+                      <Link href="/geo-services-south-africa" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
+                        Generative Engine Optimisation services
                       </Link>
-                      .
+                      ,{" "}
+                      <Link href="/ai-seo-services-south-africa" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
+                        AI SEO services
+                      </Link>
+                      , and{" "}
+                      <Link href="/answer-engine-optimisation-services-south-africa" className="text-white underline underline-offset-2" style={{ textDecorationColor: "#3a3a3a" }}>
+                        Answer Engine Optimisation services
+                      </Link>{" "}
+                      to build both layers.
                     </p>
                   </div>
                 </section>
 
-                <section id="combined-strategy" className="mb-14">
+                <section id="south-africa" className="mb-14">
                   <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    A Combined GEO + SEO Strategy
+                    What This Means for South African Businesses
                   </h2>
-                  <div className="flex flex-col gap-4 mb-8" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
+                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
                     <p>
-                      The optimal search visibility strategy integrates GEO and SEO at the content creation level, rather than treating them as separate workflows. This integration is achievable because the structural requirements of GEO-optimised content — self-contained passages, specific factual claims, FAQ sections with complete answers — are fully compatible with and often enhance traditional SEO performance.
+                      For South African businesses, this shift creates an early opportunity. Many businesses still optimise only for traditional rankings. That means there is space for brands that start building stronger service pages, stronger topical clusters, clearer semantic structures, citation-ready content, and better answer blocks.
                     </p>
-                  </div>
-
-                  <div className="flex flex-col gap-4">
-                    {[
-                      { step: "1", title: "Semantic SEO Foundation First", detail: "Establish entity clarity, topical authority, and technical SEO before pursuing GEO. AI retrieval models do not cite sources from websites they have not classified as authoritative. SEO authority is a prerequisite for GEO citation." },
-                      { step: "2", title: "Passage Architecture on Every Page", detail: "Structure every page with clearly demarcated sections, definition-first H2 headings, and self-contained paragraphs. This serves both traditional passage ranking and AI retrieval simultaneously." },
-                      { step: "3", title: "FAQ Sections on Every Commercial Page", detail: "Add FAQ sections to all commercial pages and blog posts with complete, standalone answers. Implement FAQPage schema. FAQ passages are the highest-frequency AI citation format." },
-                      { step: "4", title: "Citation Signal Injection", detail: "Add specific statistics, named expert references, and attributed data points to key passages. AI retrieval models weight verifiable claims over generic assertions." },
-                      { step: "5", title: "Measure Both Channels Separately", detail: "Track SEO metrics through position tracking and traffic analytics. Track GEO metrics through Search Console AI Overview data and manual brand mention monitoring across AI platforms." },
-                    ].map((item) => (
-                      <div key={item.step} className="rounded-xl border p-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                        <div className="flex items-start gap-4">
-                          <div className="w-6 h-6 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5" style={{ borderColor: "#2a2a2a", background: "rgba(255,255,255,0.03)" }}>
-                            <span className="text-xs font-heading font-bold text-white">{item.step}</span>
-                          </div>
-                          <div>
-                            <p className="font-heading font-semibold text-white mb-2" style={{ fontSize: "0.95rem", letterSpacing: "-0.01em" }}>{item.title}</p>
-                            <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>{item.detail}</p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                    <p>
+                      A business that combines SEO and GEO early can become more visible in both local search and AI-assisted discovery environments. That matters especially in consulting, law, healthcare, finance, B2B services, and specialist service industries where decision-making is research-led.
+                    </p>
                   </div>
                 </section>
 
-                <section id="takeaways" className="mb-14">
-                  <h2 className="font-heading font-bold text-white mb-7" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Key Takeaways
+                <section id="final-answer" className="mb-14">
+                  <h2 className="font-heading font-bold text-white mb-5" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+                    Final Answer: SEO vs GEO
                   </h2>
-                  <div className="flex flex-col gap-3">
-                    {[
-                      "SEO drives traffic through ranked link positions. GEO earns brand presence inside AI-generated answers. Both channels matter — and they serve different stages of the user journey.",
-                      "SEO optimises for ranking algorithms evaluating pages. GEO optimises for retrieval models evaluating passages. The unit of optimisation shifts from the page to the paragraph.",
-                      "GEO prioritises: passage extractability, factual specificity, citation signals, self-contained FAQ answers, and FAQPage schema. These differ from traditional ranking signals but are compatible with them.",
-                      "Success metrics diverge: SEO is measured in ranked positions and traffic. GEO is measured in AI citation frequency, brand mention volume, and zero-click brand discovery.",
-                      "GEO and SEO overlap in topical authority, entity clarity, structured data, and content quality. A unified content architecture can serve both objectives when built with passage-level structure.",
-                      "Semantic SEO foundations are a prerequisite for GEO. AI systems do not cite sources from websites they have not already classified as authoritative within a topic.",
-                    ].map((point, i) => (
-                      <div key={i} className="flex items-start gap-4 rounded-xl border p-5" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                        <div className="w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 mt-0.5" style={{ borderColor: "#2a2a2a", background: "rgba(255,255,255,0.03)" }}>
-                          <span className="text-xs font-heading font-bold text-white">{i + 1}</span>
-                        </div>
-                        <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>{point}</p>
-                      </div>
-                    ))}
+                  <div className="flex flex-col gap-4" style={{ color: "#a1a1a1", lineHeight: 1.85, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
+                    <p>SEO and GEO are not the same.</p>
+                    <p>SEO relies on ranking signals to place your pages in search results. GEO relies on content quality, structure, and answer usability to determine whether your content can be included in AI-generated answers.</p>
+                    <p>SEO wins clicks. GEO wins influence. Businesses that want durable visibility need both.</p>
                   </div>
                 </section>
 
@@ -522,16 +430,17 @@ export default function GEOvsSEOPage() {
                     Frequently Asked Questions
                   </h2>
                   <div className="flex flex-col gap-4">
-                    {faqs.map((faq) => (
-                      <details key={faq.question} className="group rounded-xl border overflow-hidden" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
-                        <summary className="flex items-start justify-between gap-4 p-6 cursor-pointer list-none" style={{ userSelect: "none" }}>
-                          <h3 className="font-heading font-semibold text-white" style={{ fontSize: "1rem", letterSpacing: "-0.01em", lineHeight: 1.4 }}>{faq.question}</h3>
-                          <ChevronDown size={16} color="#a1a1a1" className="flex-shrink-0 mt-0.5 transition-transform group-open:rotate-180" />
-                        </summary>
-                        <div className="px-6 pb-6">
-                          <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>{faq.answer}</p>
-                        </div>
-                      </details>
+                    {[
+                      { q: "What is the main difference between SEO and GEO?", a: "SEO focuses on ranking pages in search results. GEO focuses on making content usable inside AI-generated answers." },
+                      { q: "Does GEO replace SEO?", a: "No. GEO builds on SEO. Strong retrieval and ranking still matter. Both are required for full search visibility." },
+                      { q: "Why is GEO becoming more important?", a: "Because users increasingly see AI-generated summaries and answer layers before clicking through to websites." },
+                      { q: "What does SEO still do better?", a: "SEO remains the core system for earning ranked visibility, impressions, and organic clicks." },
+                      { q: "What does GEO add?", a: "GEO adds citation visibility, passage influence, and answer-layer presence in generative search." },
+                    ].map((item) => (
+                      <div key={item.q} className="rounded-xl border p-6" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
+                        <p className="font-heading font-semibold text-white mb-3" style={{ fontSize: "1rem", letterSpacing: "-0.01em" }}>{item.q}</p>
+                        <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>{item.a}</p>
+                      </div>
                     ))}
                   </div>
                 </section>
@@ -542,7 +451,7 @@ export default function GEOvsSEOPage() {
         </div>
       </section>
 
-      {/* Post Footer */}
+      {/* Footer */}
       <section className="py-28" style={{ background: "#050505", borderTop: "1px solid #1f1f1f" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -553,9 +462,12 @@ export default function GEOvsSEOPage() {
               <div className="flex flex-col gap-3">
                 {[
                   { label: "What Is GEO? A Complete Guide", href: "/blog/generative-engine-optimisation", desc: "The full pillar guide to Generative Engine Optimisation." },
-                  { label: "How AI Search Engines Choose Sources", href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", desc: "The signals that determine whether AI systems cite your content." },
-                  { label: "What Makes Content Citation-Ready", href: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", desc: "Structural and semantic properties for AI extractability." },
-                  { label: "GEO Services South Africa", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
+                  { label: "How AI Search Engines Choose Sources", href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", desc: "The signals AI systems use to select and cite content." },
+                  { label: "What Makes Content Citation-Ready", href: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", desc: "Structural properties for AI extractability." },
+                  { label: "How Google AI Overviews Change SEO and GEO", href: "/blog/generative-engine-optimisation/google-ai-overviews-and-geo", desc: "How AI Overviews work and how to optimise for them." },
+                  { label: "Generative Engine Optimisation Services", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
+                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>
                     <div className="card-hover rounded-xl border p-5 flex items-center justify-between gap-4" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
@@ -574,12 +486,12 @@ export default function GEOvsSEOPage() {
               <div className="rounded-2xl border p-10 relative overflow-hidden" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.015)" }}>
                 <div className="absolute -top-20 -right-20 w-64 h-64 opacity-5 pointer-events-none rounded-full" style={{ background: "radial-gradient(circle, white, transparent)" }} />
                 <div className="relative z-10">
-                  <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>Apply This</p>
+                  <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>Build for Rankings and AI Visibility</p>
                   <h2 className="font-heading font-bold text-white mb-4" style={{ fontSize: "clamp(1.3rem, 2.5vw, 1.8rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                    Need both GEO and SEO working together?
+                    If you want visibility across both traditional search and AI-driven search, you need more than rankings alone.
                   </h2>
                   <p className="mb-8 text-sm" style={{ color: "#a1a1a1", lineHeight: 1.8, fontFamily: "var(--font-body)" }}>
-                    Implementing a unified GEO + SEO strategy requires semantic architecture, passage-level content design, and citation signal injection. Professional implementation delivers faster, measurable results.
+                    Building a strategy that covers both SEO and GEO requires semantic architecture, passage design, and citation signal injection applied systematically. Professional implementation delivers faster, measurable results.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <Link href="/contact" className="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-medium" style={{ fontFamily: "var(--font-body)" }}>

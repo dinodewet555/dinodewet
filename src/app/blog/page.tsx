@@ -70,6 +70,86 @@ const pageSchema = {
           "datePublished": "2026-04-22",
           "author": { "@id": "https://dinodewet.tech/#person" },
         },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation#article",
+          "headline": "What Is Generative Engine Optimisation? A Complete Guide",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo#article",
+          "headline": "SEO vs GEO: The Core Difference",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#article",
+          "headline": "How AI Search Engines Choose Sources",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready#article",
+          "headline": "What Makes Content Citation-Ready for AI Search?",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo#article",
+          "headline": "How Google AI Overviews Change SEO and GEO",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses#article",
+          "headline": "Generative Engine Optimisation for South African Businesses",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#article",
+          "headline": "How Passage Ranking Affects AI Search Visibility",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation#article",
+          "headline": "The Benefits of Generative Engine Optimisation (GEO)",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#article",
+          "headline": "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
+          "url": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
+        {
+          "@type": "BlogPosting",
+          "@id": "https://dinodewet.tech/blog/semantic-seo/what-is-semantic-seo#article",
+          "headline": "Semantic SEO: What It Is and 10 Tips for Success",
+          "url": "https://dinodewet.tech/blog/semantic-seo/what-is-semantic-seo",
+          "datePublished": "2026-04-23",
+          "author": { "@id": "https://dinodewet.tech/#person" },
+        },
       ],
     },
     {
@@ -140,6 +220,106 @@ const posts = [
     readTime: "12 min read",
     featured: true,
   },
+  {
+    slug: "generative-engine-optimisation",
+    title: "What Is Generative Engine Optimisation? A Complete Guide",
+    category: "Generative Engine Optimisation",
+    summary:
+      "Generative Engine Optimisation (GEO) is the practice of structuring content so AI-powered search engines cite, quote, and recommend your brand. This guide covers the full framework — from AI retrieval mechanics to citation-ready content and passage ranking.",
+    date: "23 April 2026",
+    readTime: "14 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/geo-vs-seo",
+    title: "SEO vs GEO: The Core Difference",
+    category: "Generative Engine Optimisation",
+    summary:
+      "SEO relies on ranking signals to place pages in search results. GEO relies on content quality, structure, and extractability to determine whether content appears in AI-generated answers. Learn the core difference and why businesses need both.",
+    date: "23 April 2026",
+    readTime: "12 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/how-ai-search-engines-choose-sources",
+    title: "How AI Search Engines Choose Sources",
+    category: "Generative Engine Optimisation",
+    summary:
+      "AI search engines like ChatGPT, Perplexity, and Google AI Overviews apply specific retrieval models to select citation sources. Learn the six core signals and how to optimise for each.",
+    date: "23 April 2026",
+    readTime: "10 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/what-makes-content-citation-ready",
+    title: "What Makes Content Citation-Ready for AI Search?",
+    category: "Generative Engine Optimisation",
+    summary:
+      "Citation-ready content has seven structural properties that AI retrieval systems look for. Learn each property, how to apply it, and how to audit your existing content against the full checklist.",
+    date: "23 April 2026",
+    readTime: "9 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/google-ai-overviews-and-geo",
+    title: "How Google AI Overviews Change SEO and GEO",
+    category: "Generative Engine Optimisation",
+    summary:
+      "Google AI Overviews appear above all organic results for millions of queries. Learn how they work, how they affect traffic, and the specific optimisation changes required to earn AI Overview citation.",
+    date: "23 April 2026",
+    readTime: "10 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/geo-for-south-african-businesses",
+    title: "Generative Engine Optimisation for South African Businesses",
+    category: "Generative Engine Optimisation",
+    summary:
+      "Most South African businesses are not yet implementing GEO. Learn how to build local entity signals, target South African-specific queries, and capture first-mover AI citation advantage.",
+    date: "23 April 2026",
+    readTime: "9 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/passage-ranking-and-ai-visibility",
+    title: "How Passage Ranking Affects AI Search Visibility",
+    category: "Generative Engine Optimisation",
+    summary:
+      "Google Passage Ranking indexes individual paragraphs independently — and the same mechanism powers AI retrieval. Learn how to structure content that benefits from both simultaneously.",
+    date: "23 April 2026",
+    readTime: "9 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/benefits-of-generative-engine-optimisation",
+    title: "The Benefits of Generative Engine Optimisation (GEO)",
+    category: "Generative Engine Optimisation",
+    summary:
+      "GEO helps businesses improve visibility in AI-generated answers, strengthen authority in emerging search environments, and compete more effectively for high-intent discovery. A complete guide to the ten core benefits.",
+    date: "23 April 2026",
+    readTime: "11 min read",
+    featured: false,
+  },
+  {
+    slug: "generative-engine-optimisation/ai-overview-brand-visibility-factors",
+    title: "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
+    category: "Generative Engine Optimisation",
+    summary:
+      "Based on an analysis of 75,000 brands, the strongest factor behind AI Overview brand mentions was branded web mentions — not backlinks or ad spend. Learn the findings and what businesses should do.",
+    date: "23 April 2026",
+    readTime: "11 min read",
+    featured: false,
+  },
+  {
+    slug: "semantic-seo/what-is-semantic-seo",
+    title: "Semantic SEO: What It Is and 10 Tips for Success",
+    category: "Semantic SEO",
+    summary:
+      "Semantic SEO builds content around entities, attributes, relationships, and search intent. This guide explains what it is, why it matters, and 10 practical tips to improve topical authority, entity clarity, and search visibility.",
+    date: "23 April 2026",
+    readTime: "14 min read",
+    featured: false,
+  },
 ];
 
 const categories = [
@@ -166,6 +346,9 @@ const categories = [
 ];
 
 const services = [
+  { label: "GEO Services South Africa", href: "/geo-services-south-africa" },
+  { label: "AI SEO Services", href: "/ai-seo-services-south-africa" },
+  { label: "Answer Engine Optimisation", href: "/answer-engine-optimisation-services-south-africa" },
   { label: "Semantic SEO Services", href: "/semantic-seo-services" },
   { label: "Web Development Services", href: "/web-development-services" },
   { label: "Semantic SEO", href: "/semantic-seo" },

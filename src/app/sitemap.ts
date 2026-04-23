@@ -27,6 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/generative-engine-optimisation/google-ai-overviews-and-geo`, priority: 0.75 },
     { url: `${base}/blog/generative-engine-optimisation/geo-for-south-african-businesses`, priority: 0.75 },
     { url: `${base}/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility`, priority: 0.75 },
+    { url: `${base}/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation`, priority: 0.75 },
+    { url: `${base}/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors`, priority: 0.75 },
+    { url: `${base}/blog/semantic-seo/what-is-semantic-seo`, priority: 0.75 },
   ];
 
   return [

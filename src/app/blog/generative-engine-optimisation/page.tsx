@@ -811,6 +811,18 @@ export default function GEOPillarPage() {
                     </div>
                   </Link>
                 ))}
+                <Link href="/">
+                  <div className="card-hover rounded-xl border p-5 flex items-center justify-between gap-4" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
+                    <p className="font-heading font-semibold text-white" style={{ fontSize: "0.95rem", letterSpacing: "-0.01em" }}>Home</p>
+                    <ArrowRight size={16} color="#a1a1a1" className="flex-shrink-0" />
+                  </div>
+                </Link>
+                <Link href="/about">
+                  <div className="card-hover rounded-xl border p-5 flex items-center justify-between gap-4" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>
+                    <p className="font-heading font-semibold text-white" style={{ fontSize: "0.95rem", letterSpacing: "-0.01em" }}>About Dino de Wet</p>
+                    <ArrowRight size={16} color="#a1a1a1" className="flex-shrink-0" />
+                  </div>
+                </Link>
                 <Link href="/blog">
                   <div
                     className="card-hover rounded-xl border p-5 flex items-center justify-between gap-4"

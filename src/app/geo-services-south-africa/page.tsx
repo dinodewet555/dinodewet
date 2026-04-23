@@ -495,9 +495,10 @@ const faqs = [
 ];
 
 const relatedServices = [
-  { label: "Answer Engine Optimisation Services", href: "/semantic-seo-services" },
-  { label: "AI Architect Services", href: "/ai-architect" },
-  { label: "Semantic SEO Services", href: "/semantic-seo-services" },
+  { label: "Home", href: "/" },
+  { label: "About Dino de Wet", href: "/about" },
+  { label: "Answer Engine Optimisation Services", href: "/answer-engine-optimisation-services-south-africa" },
+  { label: "AI SEO Services", href: "/ai-seo-services-south-africa" },
   { label: "Semantic SEO Web Development", href: "/semantic-seo" },
   { label: "Web Development Services", href: "/web-development-services" },
 ];

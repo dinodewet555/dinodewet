@@ -408,6 +408,8 @@ export default function GEOForSouthAfricaPage() {
                   { label: "How Passage Ranking Affects AI Visibility", href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", desc: "Passage-level indexing and its role in AI search visibility." },
                   { label: "GEO Services South Africa", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
                   { label: "AI SEO Services South Africa", href: "/ai-seo-services-south-africa", desc: "AI-informed SEO strategies for South African brands." },
+                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>
                     <div className="card-hover rounded-xl border p-5 flex items-center justify-between gap-4" style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}>

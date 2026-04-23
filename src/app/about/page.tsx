@@ -156,6 +156,13 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
             {/* Text */}
             <AnimatedSection className="pb-16">
+              <nav aria-label="Breadcrumb" className="mb-6">
+                <ol className="flex items-center gap-2 text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
+                  <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+                  <li style={{ color: "#4a4a4a" }}>/</li>
+                  <li style={{ color: "#ffffff" }}>About Dino de Wet</li>
+                </ol>
+              </nav>
               <p className="text-xs font-medium uppercase tracking-widest mb-6" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
                 Entity
               </p>
@@ -323,6 +330,101 @@ export default function AboutPage() {
                     {item.body}
                   </p>
                 </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GEO Services */}
+      <section className="py-28 relative" style={{ background: "#050505" }}>
+        <div className="absolute inset-0 grid-bg opacity-40" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
+              Services
+            </p>
+            <h2
+              className="font-heading font-bold text-white mb-6"
+              style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.8rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}
+            >
+              Generative Engine Optimisation &amp; AI Search Services
+            </h2>
+            <p className="mb-12" style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)", maxWidth: "600px" }}>
+              Dino offers specialist services for businesses that want to be visible in AI-powered search — from GEO strategy to answer engine optimisation.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { href: "/geo-services-south-africa", title: "Generative Engine Optimisation Services", desc: "Structure your content for AI citation, passage ranking, and entity recognition in generative search results." },
+              { href: "/ai-seo-services-south-africa", title: "AI SEO Services", desc: "Optimise for AI-driven search visibility across large language models, retrieval systems, and generative answer engines." },
+              { href: "/answer-engine-optimisation-services-south-africa", title: "Answer Engine Optimisation Services", desc: "Position your content to appear as the direct answer in featured snippets, AI Overviews, and voice search results." },
+            ].map((service, i) => (
+              <AnimatedSection key={service.href} delay={i * 120}>
+                <Link href={service.href} className="block h-full">
+                  <div className="card-hover h-full p-8 rounded-xl border flex flex-col gap-4" style={{ background: "#0d0d0d", borderColor: "#1f1f1f" }}>
+                    <h3 className="font-heading font-semibold text-white" style={{ fontSize: "1.05rem", letterSpacing: "-0.01em" }}>
+                      {service.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed flex-1" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}>
+                      {service.desc}
+                    </p>
+                    <div className="flex items-center gap-2 text-sm" style={{ color: "#a1a1a1" }}>
+                      <span style={{ fontFamily: "var(--font-body)" }}>Learn more</span>
+                      <ArrowRight size={14} />
+                    </div>
+                  </div>
+                </Link>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GEO Blog Cluster */}
+      <section className="py-28" style={{ background: "#0d0d0d", borderTop: "1px solid #1f1f1f", borderBottom: "1px solid #1f1f1f" }}>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
+              GEO Knowledge Base
+            </p>
+            <h2
+              className="font-heading font-bold text-white mb-4"
+              style={{ fontSize: "clamp(1.6rem, 3.5vw, 2.8rem)", letterSpacing: "-0.02em", lineHeight: 1.2 }}
+            >
+              Resources on Generative Engine Optimisation
+            </h2>
+            <p className="mb-12" style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)", maxWidth: "560px" }}>
+              In-depth guides on AI search, citation-ready content, and how to optimise for the next generation of search engines.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: "/blog/generative-engine-optimisation", title: "What Is Generative Engine Optimisation?", desc: "The complete guide to GEO — what it is, why it matters, and how to implement it." },
+              { href: "/blog/generative-engine-optimisation/geo-vs-seo", title: "GEO vs SEO", desc: "How generative engine optimisation differs from traditional SEO in signals, goals, and measurement." },
+              { href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", title: "How AI Search Engines Choose Sources", desc: "The six signals AI systems use to select, rank, and cite content in generated answers." },
+              { href: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", title: "What Makes Content Citation-Ready for AI Search?", desc: "Seven structural properties that make content retrievable and citable by AI search systems." },
+              { href: "/blog/generative-engine-optimisation/google-ai-overviews-and-geo", title: "How Google AI Overviews Change SEO and GEO", desc: "How AI Overviews work, what content gets selected, and how to optimise for inclusion." },
+              { href: "/blog/generative-engine-optimisation/geo-for-south-african-businesses", title: "Generative Engine Optimisation for South African Businesses", desc: "Why GEO matters for SA businesses and how to implement it for local and international visibility." },
+              { href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", title: "How Passage Ranking Affects AI Search Visibility", desc: "How Google's passage ranking connects to AI retrieval and what it means for content structure." },
+            ].map((post, i) => (
+              <AnimatedSection key={post.href} delay={i * 80}>
+                <Link href={post.href} className="block h-full">
+                  <div className="card-hover h-full p-6 rounded-xl border flex flex-col gap-3" style={{ background: "#050505", borderColor: "#1f1f1f" }}>
+                    <h3 className="font-heading font-semibold text-white" style={{ fontSize: "0.95rem", letterSpacing: "-0.01em", lineHeight: 1.3 }}>
+                      {post.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed flex-1" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
+                      {post.desc}
+                    </p>
+                    <div className="flex items-center gap-2 text-xs" style={{ color: "#a1a1a1" }}>
+                      <span style={{ fontFamily: "var(--font-body)" }}>Read article</span>
+                      <ArrowRight size={12} />
+                    </div>
+                  </div>
+                </Link>
               </AnimatedSection>
             ))}
           </div>
