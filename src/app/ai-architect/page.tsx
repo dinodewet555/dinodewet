@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "Dino de Wet",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/ai-architect",
+    canonical: "https://dinodewet.co.za/ai-architect",
   },
   openGraph: {
     title: "AI Architect | Dino de Wet",
     description:
       "Design and deploy practical AI systems, LLM workflows, intelligent web experiences, and business automation solutions.",
-    url: "https://dinodewet.tech/ai-architect",
+    url: "https://dinodewet.co.za/ai-architect",
     images: [
       {
         url: "/images/dino-portrait-about.jpg",
@@ -44,30 +44,30 @@ const aiArchitectSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/ai-architect#webpage",
-      "url": "https://dinodewet.tech/ai-architect",
+      "@id": "https://dinodewet.co.za/ai-architect#webpage",
+      "url": "https://dinodewet.co.za/ai-architect",
       "name": "AI Architect | Dino de Wet",
       "description": "AI architecture services by Dino de Wet — design and deploy practical AI systems, LLM workflows, intelligent web experiences, and business automation solutions.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "about": {
         "@type": "Service",
-        "@id": "https://dinodewet.tech/ai-architect#service",
+        "@id": "https://dinodewet.co.za/ai-architect#service",
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "AI Architect", "item": "https://dinodewet.tech/ai-architect" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "AI Architect", "item": "https://dinodewet.co.za/ai-architect" },
         ],
       },
     },
     {
       "@type": "Service",
-      "@id": "https://dinodewet.tech/ai-architect#service",
+      "@id": "https://dinodewet.co.za/ai-architect#service",
       "name": "AI Architecture",
-      "url": "https://dinodewet.tech/ai-architect",
+      "url": "https://dinodewet.co.za/ai-architect",
       "description": "Practical AI systems designed for real business use — from LLM workflow design to AI-enhanced websites and intelligent business automation, built with architecture-first thinking.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": "Worldwide",
       "serviceType": "AI Architecture",
       "hasOfferCatalog": {
@@ -87,7 +87,7 @@ const aiArchitectSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/ai-architect#faq",
+      "@id": "https://dinodewet.co.za/ai-architect#faq",
       "mainEntity": [
         {
           "@type": "Question",

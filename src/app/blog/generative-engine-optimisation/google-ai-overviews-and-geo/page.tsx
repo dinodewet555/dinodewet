@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "Google AI Overviews optimisation",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
   },
   openGraph: {
     title: "How Google AI Overviews Change SEO and GEO",
     description:
       "How Google AI Overviews work, what content they surface, how they affect organic traffic, and what to do to appear within them.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
     type: "article",
     images: [{ url: "/images/semantic-seo-services.png", width: 1200, height: 630, alt: "How Google AI Overviews Change SEO and GEO" }],
   },
@@ -34,16 +34,16 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo#article",
       "headline": "How Google AI Overviews Change SEO and GEO",
       "description": "How Google AI Overviews work, what content they surface, how they affect organic traffic patterns, and the practical implementation changes required to appear within them.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
-      "publisher": { "@type": "Person", "@id": "https://dinodewet.tech/#person", "name": "Dino de Wet", "url": "https://dinodewet.tech" },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
+      "publisher": { "@type": "Person", "@id": "https://dinodewet.co.za/#person", "name": "Dino de Wet", "url": "https://dinodewet.co.za" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo" },
       "about": [
         { "@type": "Thing", "name": "Google AI Overviews" },
         { "@type": "Thing", "name": "Generative Engine Optimisation" },
@@ -55,23 +55,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
       "name": "How Google AI Overviews Change SEO and GEO",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "How Google AI Overviews Change SEO and GEO", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "How Google AI Overviews Change SEO and GEO", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/google-ai-overviews-and-geo#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -408,7 +408,7 @@ export default function GoogleAIOverviewsPage() {
                   { label: "GEO for South African Businesses", href: "/blog/generative-engine-optimisation/geo-for-south-african-businesses", desc: "How SA brands can implement GEO and capture early-mover advantage." },
                   { label: "GEO Services South Africa", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
                   { label: "AI SEO Services", href: "/ai-seo-services-south-africa", desc: "AI-informed SEO strategies for modern search engines." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

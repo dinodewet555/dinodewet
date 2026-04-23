@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "Dino de Wet",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/semantic-seo",
+    canonical: "https://dinodewet.co.za/semantic-seo",
   },
   openGraph: {
     title: "Semantic SEO Web Development | Dino de Wet",
     description:
       "Websites structured around meaning, topical relationships, search intent, and entity clarity for long-term organic visibility.",
-    url: "https://dinodewet.tech/semantic-seo",
+    url: "https://dinodewet.co.za/semantic-seo",
     images: [
       {
         url: "/images/semantic-seo-services.png",
@@ -44,30 +44,30 @@ const semanticSeoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/semantic-seo#webpage",
-      "url": "https://dinodewet.tech/semantic-seo",
+      "@id": "https://dinodewet.co.za/semantic-seo#webpage",
+      "url": "https://dinodewet.co.za/semantic-seo",
       "name": "Semantic SEO Web Development | Dino de Wet",
       "description": "Semantic SEO web development by Dino de Wet. Websites structured around meaning, topical relationships, search intent, and entity clarity.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "about": {
         "@type": "Service",
-        "@id": "https://dinodewet.tech/semantic-seo#service",
+        "@id": "https://dinodewet.co.za/semantic-seo#service",
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Semantic SEO", "item": "https://dinodewet.tech/semantic-seo" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Semantic SEO", "item": "https://dinodewet.co.za/semantic-seo" },
         ],
       },
     },
     {
       "@type": "Service",
-      "@id": "https://dinodewet.tech/semantic-seo#service",
+      "@id": "https://dinodewet.co.za/semantic-seo#service",
       "name": "Semantic SEO Web Development",
-      "url": "https://dinodewet.tech/semantic-seo",
+      "url": "https://dinodewet.co.za/semantic-seo",
       "description": "The practice of building websites structured around meaning, topical relationships, search intent, user pathways, and entity clarity — rather than isolated keywords alone. Every project is designed for long-term organic visibility.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": "Worldwide",
       "serviceType": "Semantic SEO Web Development",
       "hasOfferCatalog": {
@@ -89,7 +89,7 @@ const semanticSeoSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/semantic-seo#faq",
+      "@id": "https://dinodewet.co.za/semantic-seo#faq",
       "mainEntity": [
         {
           "@type": "Question",

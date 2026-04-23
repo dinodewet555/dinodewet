@@ -108,7 +108,7 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-3">
               <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-                hello@dinodewet.tech
+                dinodewet555@gmail.com
               </p>
               <Link
                 href="/contact"
@@ -129,7 +129,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Dino de Wet. All rights reserved.
           </p>
           <p className="text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-            dinodewet.tech — Built for authority, visibility, and growth.
+            dinodewet.co.za — Built for authority, visibility, and growth.
           </p>
         </div>
       </div>

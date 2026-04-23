@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "AI Search SEO",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/what-is-semantic-seo",
+    canonical: "https://dinodewet.co.za/blog/what-is-semantic-seo",
   },
   openGraph: {
     title: "What Is Semantic SEO? A Complete Guide",
     description:
       "Semantic SEO builds search visibility around entities, attributes, and relationships rather than keywords. A complete guide to entity-first content architecture, Knowledge Graphs, and topical authority.",
-    url: "https://dinodewet.tech/blog/what-is-semantic-seo",
+    url: "https://dinodewet.co.za/blog/what-is-semantic-seo",
     type: "article",
     images: [
       {
@@ -44,30 +44,30 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/what-is-semantic-seo#article",
+      "@id": "https://dinodewet.co.za/blog/what-is-semantic-seo#article",
       "headline": "What Is Semantic SEO? A Complete Guide",
       "description":
         "Semantic SEO builds search visibility around entities, attributes, and relationships rather than keywords. This guide explains how it works, why it outperforms traditional keyword SEO, and how to implement it using entity-first content architecture.",
-      "url": "https://dinodewet.tech/blog/what-is-semantic-seo",
+      "url": "https://dinodewet.co.za/blog/what-is-semantic-seo",
       "datePublished": "2026-04-22",
       "dateModified": "2026-04-22",
-      "author": { "@id": "https://dinodewet.tech/#person" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
       "publisher": {
         "@type": "Person",
-        "@id": "https://dinodewet.tech/#person",
+        "@id": "https://dinodewet.co.za/#person",
         "name": "Dino de Wet",
-        "url": "https://dinodewet.tech",
+        "url": "https://dinodewet.co.za",
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://dinodewet.tech/images/semantic-seo-services.png",
+        "url": "https://dinodewet.co.za/images/semantic-seo-services.png",
         "width": 1200,
         "height": 630,
       },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dinodewet.tech/blog/what-is-semantic-seo",
+        "@id": "https://dinodewet.co.za/blog/what-is-semantic-seo",
       },
       "about": [
         { "@type": "Thing", "name": "Semantic SEO" },
@@ -83,27 +83,27 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/what-is-semantic-seo#webpage",
-      "url": "https://dinodewet.tech/blog/what-is-semantic-seo",
+      "@id": "https://dinodewet.co.za/blog/what-is-semantic-seo#webpage",
+      "url": "https://dinodewet.co.za/blog/what-is-semantic-seo",
       "name": "What Is Semantic SEO? A Complete Guide",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "What Is Semantic SEO? A Complete Guide",
-            "item": "https://dinodewet.tech/blog/what-is-semantic-seo",
+            "item": "https://dinodewet.co.za/blog/what-is-semantic-seo",
           },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/what-is-semantic-seo#faq",
+      "@id": "https://dinodewet.co.za/blog/what-is-semantic-seo#faq",
       "mainEntity": [
         {
           "@type": "Question",

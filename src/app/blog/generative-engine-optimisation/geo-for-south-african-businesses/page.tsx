@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "first mover GEO",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses",
   },
   openGraph: {
     title: "Generative Engine Optimisation for South African Businesses",
     description:
       "How South African brands can implement GEO to earn citations in AI-generated search responses — and why the early-mover window is open now.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses",
     type: "article",
     images: [{ url: "/images/semantic-seo-services.png", width: 1200, height: 630, alt: "Generative Engine Optimisation for South African Businesses" }],
   },
@@ -35,16 +35,16 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses#article",
       "headline": "Generative Engine Optimisation for South African Businesses",
       "description": "How South African brands can implement GEO to earn citations in AI-generated search responses — including local entity optimisation, industry-specific strategy, and the early-mover advantage.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
-      "publisher": { "@type": "Person", "@id": "https://dinodewet.tech/#person", "name": "Dino de Wet", "url": "https://dinodewet.tech" },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
+      "publisher": { "@type": "Person", "@id": "https://dinodewet.co.za/#person", "name": "Dino de Wet", "url": "https://dinodewet.co.za" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses" },
       "about": [
         { "@type": "Thing", "name": "Generative Engine Optimisation" },
         { "@type": "Place", "name": "South Africa" },
@@ -56,23 +56,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses",
       "name": "Generative Engine Optimisation for South African Businesses",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "GEO for South African Businesses", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "GEO for South African Businesses", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-for-south-african-businesses#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -408,7 +408,7 @@ export default function GEOForSouthAfricaPage() {
                   { label: "How Passage Ranking Affects AI Visibility", href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", desc: "Passage-level indexing and its role in AI search visibility." },
                   { label: "GEO Services South Africa", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
                   { label: "AI SEO Services South Africa", href: "/ai-seo-services-south-africa", desc: "AI-informed SEO strategies for South African brands." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

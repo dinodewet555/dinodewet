@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     "LLM Visibility SEO",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/ai-seo-services-south-africa",
+    canonical: "https://dinodewet.co.za/ai-seo-services-south-africa",
   },
   openGraph: {
     title: "AI SEO Services South Africa | AI SEO Consultant | Dino de Wet",
     description:
       "AI SEO services in South Africa for stronger search visibility, smarter content systems, and future-ready organic growth across traditional and AI-driven search.",
-    url: "https://dinodewet.tech/ai-seo-services-south-africa",
+    url: "https://dinodewet.co.za/ai-seo-services-south-africa",
     images: [
       {
         url: "/images/ai-seo-services-south-africa.png",
@@ -61,13 +61,13 @@ const pageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/ai-seo-services-south-africa#webpage",
-      "url": "https://dinodewet.tech/ai-seo-services-south-africa",
+      "@id": "https://dinodewet.co.za/ai-seo-services-south-africa#webpage",
+      "url": "https://dinodewet.co.za/ai-seo-services-south-africa",
       "name": "AI SEO Services South Africa | AI SEO Consultant | Dino de Wet",
       "description":
         "AI SEO services in South Africa for stronger search visibility, smarter content systems, and future-ready organic growth across traditional and AI-driven search.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/ai-seo-services-south-africa#service" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/ai-seo-services-south-africa#service" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -75,31 +75,31 @@ const pageSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dinodewet.tech",
+            "item": "https://dinodewet.co.za",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "GEO Services South Africa",
-            "item": "https://dinodewet.tech/geo-services-south-africa",
+            "item": "https://dinodewet.co.za/geo-services-south-africa",
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "AI SEO Services South Africa",
-            "item": "https://dinodewet.tech/ai-seo-services-south-africa",
+            "item": "https://dinodewet.co.za/ai-seo-services-south-africa",
           },
         ],
       },
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://dinodewet.tech/ai-seo-services-south-africa#service",
+      "@id": "https://dinodewet.co.za/ai-seo-services-south-africa#service",
       "name": "AI SEO Services South Africa",
-      "url": "https://dinodewet.tech/ai-seo-services-south-africa",
+      "url": "https://dinodewet.co.za/ai-seo-services-south-africa",
       "description":
         "AI SEO services combining semantic search optimisation, entity clarity, topical authority, and AI-assisted content systems to improve organic visibility across search engines and AI-driven discovery platforms in South Africa.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": [
         { "@type": "Country", "name": "South Africa" },
         { "@type": "City", "name": "Cape Town" },
@@ -168,7 +168,7 @@ const pageSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/ai-seo-services-south-africa#faq",
+      "@id": "https://dinodewet.co.za/ai-seo-services-south-africa#faq",
       "mainEntity": [
         {
           "@type": "Question",

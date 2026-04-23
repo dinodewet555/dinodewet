@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://dinodewet.tech";
+  const base = "https://dinodewet.co.za";
   const now = new Date("2026-04-23");
 
   const staticPages = [

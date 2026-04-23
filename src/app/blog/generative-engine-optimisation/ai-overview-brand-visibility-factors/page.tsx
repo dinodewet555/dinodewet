@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "GEO South Africa",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
   },
   openGraph: {
     title: "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
     description:
       "Learn which factors correlate most strongly with AI Overview brand visibility, based on a 75,000-brand analysis, and what businesses should do to improve mentions.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
     type: "article",
     images: [
       {
@@ -41,30 +41,30 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#article",
       "headline": "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
       "description":
         "Based on a 75,000-brand analysis, the strongest factor behind AI Overview brand visibility was branded web mentions — not backlinks or ad spend. This article breaks down the findings and what businesses should do.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
       "publisher": {
         "@type": "Person",
-        "@id": "https://dinodewet.tech/#person",
+        "@id": "https://dinodewet.co.za/#person",
         "name": "Dino de Wet",
-        "url": "https://dinodewet.tech",
+        "url": "https://dinodewet.co.za",
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://dinodewet.tech/images/semantic-seo-services.png",
+        "url": "https://dinodewet.co.za/images/semantic-seo-services.png",
         "width": 1200,
         "height": 630,
       },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
+        "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
       },
       "about": [
         { "@type": "Thing", "name": "Google AI Overviews" },
@@ -77,23 +77,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
       "name": "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "AI Overview Brand Visibility Factors", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "AI Overview Brand Visibility Factors", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -488,7 +488,7 @@ export default function AIOverviewBrandVisibilityPage() {
                   { label: "GEO for South African Businesses", href: "/blog/generative-engine-optimisation/geo-for-south-african-businesses", desc: "How SA brands can implement GEO and capture early-mover advantage." },
                   { label: "Generative Engine Optimisation Services", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
                   { label: "AI SEO Services", href: "/ai-seo-services-south-africa", desc: "AI-informed SEO strategies for South African brands." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

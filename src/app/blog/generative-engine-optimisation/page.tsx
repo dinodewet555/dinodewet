@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "Dino de Wet GEO",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation",
   },
   openGraph: {
     title: "What Is Generative Engine Optimisation? A Complete Guide",
     description:
       "GEO is the methodology for earning citations, quotes, and recommendations inside AI-generated search responses. A complete guide to how it works and how to implement it.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation",
     type: "article",
     images: [
       {
@@ -44,30 +44,30 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation#article",
       "headline": "What Is Generative Engine Optimisation? A Complete Guide",
       "description":
         "Generative Engine Optimisation (GEO) is the practice of structuring, positioning, and optimising digital content so that AI-powered search engines cite, quote, and recommend your brand in generated responses.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
       "publisher": {
         "@type": "Person",
-        "@id": "https://dinodewet.tech/#person",
+        "@id": "https://dinodewet.co.za/#person",
         "name": "Dino de Wet",
-        "url": "https://dinodewet.tech",
+        "url": "https://dinodewet.co.za",
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://dinodewet.tech/images/semantic-seo-services.png",
+        "url": "https://dinodewet.co.za/images/semantic-seo-services.png",
         "width": 1200,
         "height": 630,
       },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dinodewet.tech/blog/generative-engine-optimisation",
+        "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation",
       },
       "about": [
         { "@type": "Thing", "name": "Generative Engine Optimisation" },
@@ -83,27 +83,27 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation",
       "name": "What Is Generative Engine Optimisation? A Complete Guide",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "What Is Generative Engine Optimisation? A Complete Guide",
-            "item": "https://dinodewet.tech/blog/generative-engine-optimisation",
+            "item": "https://dinodewet.co.za/blog/generative-engine-optimisation",
           },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation#faq",
       "mainEntity": [
         {
           "@type": "Question",

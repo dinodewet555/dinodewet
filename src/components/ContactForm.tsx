@@ -14,6 +14,8 @@ const projectTypes = [
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -28,9 +30,23 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Failed to send");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please email dinodewet555@gmail.com directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputStyle = {
@@ -182,12 +198,18 @@ export default function ContactForm() {
         />
       </div>
 
+      {error && (
+        <p className="text-sm text-red-400" style={{ fontFamily: "var(--font-body)" }}>
+          {error}
+        </p>
+      )}
       <button
         type="submit"
-        className="btn-primary flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg text-sm font-medium mt-2"
+        disabled={loading}
+        className="btn-primary flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg text-sm font-medium mt-2 disabled:opacity-50 disabled:cursor-not-allowed"
         style={{ fontFamily: "var(--font-body)" }}
       >
-        Send Message <ArrowRight size={14} />
+        {loading ? "Sending…" : <><span>Send Message</span> <ArrowRight size={14} /></>}
       </button>
     </form>
   );

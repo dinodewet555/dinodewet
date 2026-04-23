@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "passage optimisation",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready",
   },
   openGraph: {
     title: "What Makes Content Citation-Ready for AI Search?",
     description:
       "The structural and semantic properties that make content extractable, trustworthy, and referable by AI-generated search responses.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready",
     type: "article",
     images: [
       {
@@ -42,17 +42,17 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready#article",
       "headline": "What Makes Content Citation-Ready for AI Search?",
       "description":
         "The structural and semantic properties — from definition-first sentences to FAQPage schema — that cause AI search systems to select your content as a citation source.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
-      "publisher": { "@type": "Person", "@id": "https://dinodewet.tech/#person", "name": "Dino de Wet", "url": "https://dinodewet.tech" },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
+      "publisher": { "@type": "Person", "@id": "https://dinodewet.co.za/#person", "name": "Dino de Wet", "url": "https://dinodewet.co.za" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready" },
       "about": [
         { "@type": "Thing", "name": "Generative Engine Optimisation" },
         { "@type": "Thing", "name": "Citation-Ready Content" },
@@ -64,23 +64,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready",
       "name": "What Makes Content Citation-Ready for AI Search?",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "What Makes Content Citation-Ready for AI Search?", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "What Makes Content Citation-Ready for AI Search?", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/what-makes-content-citation-ready#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -437,7 +437,7 @@ export default function CitationReadyContentPage() {
                   { label: "How AI Search Engines Choose Sources", href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", desc: "The retrieval signals that determine which sources AI systems select." },
                   { label: "How Passage Ranking Affects AI Visibility", href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", desc: "Passage-level indexing and its role in AI search." },
                   { label: "Answer Engine Optimisation Services", href: "/answer-engine-optimisation-services-south-africa", desc: "Professional AEO for South African businesses." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

@@ -3,7 +3,11 @@
     "allow": [
       "Bash(npm run *)",
       "Bash(node -e ' *)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(xargs sed *)",
+      "Bash(npm install *)",
+      "Bash(xxd /c/Users/farha/Downloads/dinodewet/public/google518f28c001775372.html)",
+      "Bash(xxd \"/c/Users/farha/Downloads/google518f28c001775372 \\(1\\).html\")"
     ]
   }
 }

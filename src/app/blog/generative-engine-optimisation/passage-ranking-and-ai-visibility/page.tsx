@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "passage ranking South Africa",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
   },
   openGraph: {
     title: "How Passage Ranking Affects AI Search Visibility",
     description:
       "Passage Ranking extracts individual passages from pages to answer specific queries. It is the bridge between traditional search and AI retrieval — and understanding it is essential to GEO content structure.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
     type: "article",
     images: [{ url: "/images/semantic-seo-services.png", width: 1200, height: 630, alt: "How Passage Ranking Affects AI Search Visibility" }],
   },
@@ -35,16 +35,16 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#article",
       "headline": "How Passage Ranking Affects AI Search Visibility",
       "description": "Google Passage Ranking indexes individual paragraphs independently of overall page relevance, enabling specific passages to rank for specific queries. The same passage-level evaluation mechanism drives AI search retrieval.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
-      "publisher": { "@type": "Person", "@id": "https://dinodewet.tech/#person", "name": "Dino de Wet", "url": "https://dinodewet.tech" },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
+      "publisher": { "@type": "Person", "@id": "https://dinodewet.co.za/#person", "name": "Dino de Wet", "url": "https://dinodewet.co.za" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility" },
       "about": [
         { "@type": "Thing", "name": "Google Passage Ranking" },
         { "@type": "Thing", "name": "Generative Engine Optimisation" },
@@ -56,23 +56,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
       "name": "How Passage Ranking Affects AI Search Visibility",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "How Passage Ranking Affects AI Search Visibility", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "How Passage Ranking Affects AI Search Visibility", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -461,7 +461,7 @@ export default function PassageRankingPage() {
                   { label: "GEO vs SEO: What Is the Difference?", href: "/blog/generative-engine-optimisation/geo-vs-seo", desc: "How GEO and SEO differ in goals, signals, and success metrics." },
                   { label: "GEO Services South Africa", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
                   { label: "AI SEO Services South Africa", href: "/ai-seo-services-south-africa", desc: "AI-informed SEO strategies for South African brands." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

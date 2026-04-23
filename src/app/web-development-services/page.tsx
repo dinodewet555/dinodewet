@@ -43,13 +43,13 @@ export const metadata: Metadata = {
     "South Africa Web Development",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/web-development-services",
+    canonical: "https://dinodewet.co.za/web-development-services",
   },
   openGraph: {
     title: "Web Development Services | Fast, Scalable, High-Converting Websites",
     description:
       "Professional web development services for startups, local businesses, ecommerce, SaaS, and B2B. Custom websites built for speed, SEO, and conversions.",
-    url: "https://dinodewet.tech/web-development-services",
+    url: "https://dinodewet.co.za/web-development-services",
     images: [
       {
         url: "/images/semantic-seo-services.png",
@@ -66,13 +66,13 @@ const pageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/web-development-services#webpage",
-      "url": "https://dinodewet.tech/web-development-services",
+      "@id": "https://dinodewet.co.za/web-development-services#webpage",
+      "url": "https://dinodewet.co.za/web-development-services",
       "name": "Web Development Services | Fast, Scalable, High-Converting Websites",
       "description":
         "Professional web development services for startups, local businesses, ecommerce, SaaS, and B2B. Custom websites built for speed, SEO, and conversions.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/web-development-services#service" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/web-development-services#service" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -80,25 +80,25 @@ const pageSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dinodewet.tech",
+            "item": "https://dinodewet.co.za",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Web Development Services",
-            "item": "https://dinodewet.tech/web-development-services",
+            "item": "https://dinodewet.co.za/web-development-services",
           },
         ],
       },
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://dinodewet.tech/web-development-services#service",
+      "@id": "https://dinodewet.co.za/web-development-services#service",
       "name": "Web Development Services",
-      "url": "https://dinodewet.tech/web-development-services",
+      "url": "https://dinodewet.co.za/web-development-services",
       "description":
         "End-to-end web development services including custom website builds, WordPress development, ecommerce, landing pages, web applications, redesigns, and ongoing maintenance — all built for performance, SEO, and conversions.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": "Worldwide",
       "serviceType": "Web Development",
       "hasOfferCatalog": {
@@ -166,7 +166,7 @@ const pageSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/web-development-services#faq",
+      "@id": "https://dinodewet.co.za/web-development-services#faq",
       "mainEntity": [
         {
           "@type": "Question",

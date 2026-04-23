@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Dino de Wet builds high-performance websites and intelligent digital systems combining semantic SEO, Next.js development, and AI architecture for authority, visibility, and growth.",
   alternates: {
-    canonical: "https://dinodewet.tech",
+    canonical: "https://dinodewet.co.za",
   },
 };
 
@@ -22,39 +22,39 @@ const homeSchema = {
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://dinodewet.tech/#website",
+      "@id": "https://dinodewet.co.za/#website",
       "name": "Dino de Wet",
-      "url": "https://dinodewet.tech",
+      "url": "https://dinodewet.co.za",
       "description": "High-performance websites and intelligent digital systems combining semantic SEO, Next.js development, and AI architecture.",
-      "publisher": { "@id": "https://dinodewet.tech/#person" },
+      "publisher": { "@id": "https://dinodewet.co.za/#person" },
       "inLanguage": "en-ZA",
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/#webpage",
-      "url": "https://dinodewet.tech",
+      "@id": "https://dinodewet.co.za/#webpage",
+      "url": "https://dinodewet.co.za",
       "name": "Dino de Wet | Semantic SEO Web Developer & AI Architect",
       "description": "Dino de Wet builds high-performance websites and intelligent digital systems combining semantic SEO, Next.js development, and AI architecture for authority, visibility, and growth.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/#person" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/#person" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
         ],
       },
     },
     {
       "@type": "Person",
-      "@id": "https://dinodewet.tech/#person",
+      "@id": "https://dinodewet.co.za/#person",
       "name": "Dino de Wet",
       "givenName": "Dino",
       "familyName": "de Wet",
-      "url": "https://dinodewet.tech",
+      "url": "https://dinodewet.co.za",
       "image": {
         "@type": "ImageObject",
-        "@id": "https://dinodewet.tech/#personImage",
-        "url": "https://dinodewet.tech/images/dino-portrait-about.jpg",
+        "@id": "https://dinodewet.co.za/#personImage",
+        "url": "https://dinodewet.co.za/images/dino-portrait-about.jpg",
         "caption": "Dino de Wet — Semantic SEO Web Developer & AI Architect",
       },
       "jobTitle": "Semantic SEO Web Developer & AI Architect",
@@ -65,7 +65,7 @@ const homeSchema = {
         "addressRegion": "Western Cape",
         "addressCountry": "ZA",
       },
-      "email": "hello@dinodewet.tech",
+      "email": "dinodewet555@gmail.com",
       "knowsAbout": [
         "Semantic SEO",
         "AI Architecture",
@@ -92,18 +92,18 @@ const homeSchema = {
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dinodewet.tech/about",
+        "@id": "https://dinodewet.co.za/about",
       },
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://dinodewet.tech/#business",
+      "@id": "https://dinodewet.co.za/#business",
       "name": "Dino de Wet",
-      "alternateName": "dinodewet.tech",
-      "url": "https://dinodewet.tech",
+      "alternateName": "dinodewet.co.za",
+      "url": "https://dinodewet.co.za",
       "description": "Semantic SEO web development, AI architecture, and Next.js development services by Dino de Wet.",
-      "founder": { "@id": "https://dinodewet.tech/#person" },
-      "employee": { "@id": "https://dinodewet.tech/#person" },
+      "founder": { "@id": "https://dinodewet.co.za/#person" },
+      "employee": { "@id": "https://dinodewet.co.za/#person" },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Cape Town",
@@ -128,7 +128,7 @@ const homeSchema = {
             "itemOffered": {
               "@type": "Service",
               "name": "Semantic SEO Web Development",
-              "url": "https://dinodewet.tech/semantic-seo",
+              "url": "https://dinodewet.co.za/semantic-seo",
               "description": "Websites structured for topical depth, crawlability, entity clarity, and long-term organic visibility.",
             },
           },
@@ -137,7 +137,7 @@ const homeSchema = {
             "itemOffered": {
               "@type": "Service",
               "name": "AI Architecture",
-              "url": "https://dinodewet.tech/ai-architect",
+              "url": "https://dinodewet.co.za/ai-architect",
               "description": "Design and deploy practical AI systems, LLM workflows, and intelligent business solutions.",
             },
           },
@@ -621,7 +621,7 @@ export default function HomePage() {
                 Rather than treating websites as isolated design projects, Dino approaches them as structured digital assets that need to communicate meaning clearly to users, search engines, and intelligent systems alike.
               </p>
               <p className="mb-8" style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
-                dinodewet.tech is both a service platform and a digital authority hub — reflecting a modern approach where development, search strategy, and AI implementation work together instead of separately.
+                dinodewet.co.za is both a service platform and a digital authority hub — reflecting a modern approach where development, search strategy, and AI implementation work together instead of separately.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link

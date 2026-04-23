@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     "AEO Services",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/geo-services-south-africa",
+    canonical: "https://dinodewet.co.za/geo-services-south-africa",
   },
   openGraph: {
     title: "Generative Engine Optimisation Services South Africa | Dino de Wet",
     description:
       "Improve AI search visibility in ChatGPT, Google AI Overviews, and Perplexity with Generative Engine Optimisation services in South Africa by Dino de Wet.",
-    url: "https://dinodewet.tech/geo-services-south-africa",
+    url: "https://dinodewet.co.za/geo-services-south-africa",
     images: [
       {
         url: "/images/geo-services-south-africa.png",
@@ -62,13 +62,13 @@ const pageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/geo-services-south-africa#webpage",
-      "url": "https://dinodewet.tech/geo-services-south-africa",
+      "@id": "https://dinodewet.co.za/geo-services-south-africa#webpage",
+      "url": "https://dinodewet.co.za/geo-services-south-africa",
       "name": "Generative Engine Optimisation Services South Africa | Dino de Wet",
       "description":
         "Improve AI search visibility in ChatGPT, Google AI Overviews, and Perplexity with Generative Engine Optimisation services in South Africa by Dino de Wet.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/geo-services-south-africa#service" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/geo-services-south-africa#service" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -76,25 +76,25 @@ const pageSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dinodewet.tech",
+            "item": "https://dinodewet.co.za",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "GEO Services South Africa",
-            "item": "https://dinodewet.tech/geo-services-south-africa",
+            "item": "https://dinodewet.co.za/geo-services-south-africa",
           },
         ],
       },
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://dinodewet.tech/geo-services-south-africa#service",
+      "@id": "https://dinodewet.co.za/geo-services-south-africa#service",
       "name": "Generative Engine Optimisation Services South Africa",
-      "url": "https://dinodewet.tech/geo-services-south-africa",
+      "url": "https://dinodewet.co.za/geo-services-south-africa",
       "description":
         "GEO services helping South African businesses improve visibility in AI-driven search systems including ChatGPT, Google AI Overviews, Perplexity, and Gemini through semantic architecture, entity clarity, and topical authority.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": [
         {
           "@type": "Country",
@@ -169,7 +169,7 @@ const pageSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/geo-services-south-africa#faq",
+      "@id": "https://dinodewet.co.za/geo-services-south-africa#faq",
       "mainEntity": [
         {
           "@type": "Question",

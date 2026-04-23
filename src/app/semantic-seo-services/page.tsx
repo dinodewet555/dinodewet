@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     "Dino de Wet",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/semantic-seo-services",
+    canonical: "https://dinodewet.co.za/semantic-seo-services",
   },
   openGraph: {
     title: "Semantic SEO Services | Topical Authority & Organic Traffic Growth",
     description:
       "Semantic SEO services that build topical authority, align content with search intent, and drive qualified organic traffic for SaaS, ecommerce, local, B2B, and publishers.",
-    url: "https://dinodewet.tech/semantic-seo-services",
+    url: "https://dinodewet.co.za/semantic-seo-services",
     images: [
       {
         url: "/images/semantic-seo-services.png",
@@ -61,13 +61,13 @@ const pageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/semantic-seo-services#webpage",
-      "url": "https://dinodewet.tech/semantic-seo-services",
+      "@id": "https://dinodewet.co.za/semantic-seo-services#webpage",
+      "url": "https://dinodewet.co.za/semantic-seo-services",
       "name": "Semantic SEO Services | Topical Authority & Organic Traffic Growth",
       "description":
         "Semantic SEO services that build topical authority, align content with search intent, and drive qualified organic traffic for SaaS, ecommerce, local, B2B, and publishers.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/semantic-seo-services#service" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/semantic-seo-services#service" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -75,25 +75,25 @@ const pageSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dinodewet.tech",
+            "item": "https://dinodewet.co.za",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Semantic SEO Services",
-            "item": "https://dinodewet.tech/semantic-seo-services",
+            "item": "https://dinodewet.co.za/semantic-seo-services",
           },
         ],
       },
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://dinodewet.tech/semantic-seo-services#service",
+      "@id": "https://dinodewet.co.za/semantic-seo-services#service",
       "name": "Semantic SEO Services",
-      "url": "https://dinodewet.tech/semantic-seo-services",
+      "url": "https://dinodewet.co.za/semantic-seo-services",
       "description":
         "End-to-end semantic SEO services including audits, keyword-to-topic mapping, topical authority strategy, content optimisation, entity SEO, internal linking architecture, and schema markup implementation.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": "Worldwide",
       "serviceType": "Semantic SEO",
       "hasOfferCatalog": {
@@ -168,7 +168,7 @@ const pageSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/semantic-seo-services#faq",
+      "@id": "https://dinodewet.co.za/semantic-seo-services#faq",
       "mainEntity": [
         {
           "@type": "Question",

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Contact Dino de Wet to discuss your next high-performance website, semantic SEO strategy, or AI architecture project. Based in Cape Town, available worldwide.",
   alternates: {
-    canonical: "https://dinodewet.tech/contact",
+    canonical: "https://dinodewet.co.za/contact",
   },
   openGraph: {
     title: "Contact Dino de Wet | Start a Project",
     description:
       "Contact Dino de Wet to discuss your next high-performance website, semantic SEO strategy, or AI architecture project.",
-    url: "https://dinodewet.tech/contact",
+    url: "https://dinodewet.co.za/contact",
     images: [
       {
         url: "/images/dino-portrait-hero.jpg",
@@ -32,25 +32,25 @@ const contactSchema = {
   "@graph": [
     {
       "@type": "ContactPage",
-      "@id": "https://dinodewet.tech/contact#webpage",
-      "url": "https://dinodewet.tech/contact",
+      "@id": "https://dinodewet.co.za/contact#webpage",
+      "url": "https://dinodewet.co.za/contact",
       "name": "Contact Dino de Wet | Start a Project",
       "description": "Contact Dino de Wet to discuss your next high-performance website, semantic SEO strategy, or AI architecture project.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://dinodewet.tech/contact" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://dinodewet.co.za/contact" },
         ],
       },
     },
     {
       "@type": "Person",
-      "@id": "https://dinodewet.tech/#person",
+      "@id": "https://dinodewet.co.za/#person",
       "name": "Dino de Wet",
-      "email": "hello@dinodewet.tech",
-      "url": "https://dinodewet.tech",
+      "email": "dinodewet555@gmail.com",
+      "url": "https://dinodewet.co.za",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Cape Town",
@@ -60,8 +60,8 @@ const contactSchema = {
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Business Enquiries",
-        "email": "hello@dinodewet.tech",
-        "url": "https://dinodewet.tech/contact",
+        "email": "dinodewet555@gmail.com",
+        "url": "https://dinodewet.co.za/contact",
         "availableLanguage": "English",
         "areaServed": "Worldwide",
       },
@@ -70,8 +70,8 @@ const contactSchema = {
 };
 
 const contactPoints = [
-  { icon: Globe, label: "Website", value: "dinodewet.tech" },
-  { icon: Mail, label: "Email", value: "hello@dinodewet.tech" },
+  { icon: Globe, label: "Website", value: "dinodewet.co.za" },
+  { icon: Mail, label: "Email", value: "dinodewet555@gmail.com" },
   { icon: MessageSquare, label: "Response Time", value: "Within 24 hours" },
 ];
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                 Contact<br />Dino de Wet
               </h1>
               <p style={{ color: "#a1a1a1", maxWidth: "520px", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)" }}>
-                Whether you need a high-performance website, a semantic SEO-driven digital strategy, or AI architecture for your business — dinodewet.tech is built to start meaningful digital projects with clarity and precision.
+                Whether you need a high-performance website, a semantic SEO-driven digital strategy, or AI architecture for your business — dinodewet.co.za is built to start meaningful digital projects with clarity and precision.
               </p>
             </div>
           </AnimatedSection>
@@ -238,7 +238,7 @@ export default function ContactPage() {
                   Prefer a direct conversation?
                 </p>
                 <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-                  Reach out directly at hello@dinodewet.tech
+                  Reach out directly at dinodewet555@gmail.com
                 </p>
               </div>
               <Image

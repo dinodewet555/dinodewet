@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "GEO South Africa",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo",
   },
   openGraph: {
     title: "SEO vs GEO: The Core Difference",
     description:
       "Learn the core difference between SEO and GEO, why SEO drives clicks, why GEO drives AI citation visibility, and why businesses now need both.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo",
     type: "article",
     images: [
       {
@@ -41,30 +41,30 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo#article",
       "headline": "SEO vs GEO: The Core Difference",
       "description":
         "The core difference between SEO and GEO — why SEO drives clicks, why GEO drives AI citation visibility, and why businesses now need both.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
       "publisher": {
         "@type": "Person",
-        "@id": "https://dinodewet.tech/#person",
+        "@id": "https://dinodewet.co.za/#person",
         "name": "Dino de Wet",
-        "url": "https://dinodewet.tech",
+        "url": "https://dinodewet.co.za",
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://dinodewet.tech/images/semantic-seo-services.png",
+        "url": "https://dinodewet.co.za/images/semantic-seo-services.png",
         "width": 1200,
         "height": 630,
       },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
+        "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo",
       },
       "about": [
         { "@type": "Thing", "name": "Generative Engine Optimisation" },
@@ -77,23 +77,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo",
       "name": "SEO vs GEO: The Core Difference",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "SEO vs GEO: The Core Difference", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "SEO vs GEO: The Core Difference", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/geo-vs-seo#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -466,7 +466,7 @@ export default function SEOvsGEOPage() {
                   { label: "What Makes Content Citation-Ready", href: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", desc: "Structural properties for AI extractability." },
                   { label: "How Google AI Overviews Change SEO and GEO", href: "/blog/generative-engine-optimisation/google-ai-overviews-and-geo", desc: "How AI Overviews work and how to optimise for them." },
                   { label: "Generative Engine Optimisation Services", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "GEO South Africa",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
+    canonical: "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
   },
   openGraph: {
     title: "How AI Search Engines Choose Sources",
     description:
       "The signals AI systems use to select content for citation — and how to structure your content to become a preferred source across Google, ChatGPT, and Perplexity.",
-    url: "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
+    url: "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
     type: "article",
     images: [
       {
@@ -42,17 +42,17 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#article",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#article",
       "headline": "How AI Search Engines Choose Sources",
       "description":
         "The specific signals AI-powered search systems use to select citation sources — and the content strategies that increase the probability of your brand being selected.",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
       "datePublished": "2026-04-23",
       "dateModified": "2026-04-23",
-      "author": { "@id": "https://dinodewet.tech/#person" },
-      "publisher": { "@type": "Person", "@id": "https://dinodewet.tech/#person", "name": "Dino de Wet", "url": "https://dinodewet.tech" },
-      "isPartOf": { "@id": "https://dinodewet.tech/blog#blog" },
-      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" },
+      "author": { "@id": "https://dinodewet.co.za/#person" },
+      "publisher": { "@type": "Person", "@id": "https://dinodewet.co.za/#person", "name": "Dino de Wet", "url": "https://dinodewet.co.za" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/blog#blog" },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" },
       "about": [
         { "@type": "Thing", "name": "AI Search Engines" },
         { "@type": "Thing", "name": "Retrieval-Augmented Generation" },
@@ -64,23 +64,23 @@ const articleSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#webpage",
-      "url": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#webpage",
+      "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
       "name": "How AI Search Engines Choose Sources",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.tech/blog" },
-          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.tech/blog/generative-engine-optimisation" },
-          { "@type": "ListItem", "position": 4, "name": "How AI Search Engines Choose Sources", "item": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://dinodewet.co.za/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Generative Engine Optimisation", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation" },
+          { "@type": "ListItem", "position": 4, "name": "How AI Search Engines Choose Sources", "item": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" },
         ],
       },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#faq",
+      "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -458,7 +458,7 @@ export default function HowAIChoosesSourcesPage() {
                   { label: "What Makes Content Citation-Ready", href: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", desc: "The structural properties AI systems look for in extractable content." },
                   { label: "How Passage Ranking Affects AI Visibility", href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", desc: "The connection between passage-level indexing and AI retrieval." },
                   { label: "GEO Services South Africa", href: "/geo-services-south-africa", desc: "Professional GEO implementation for South African businesses." },
-                  { label: "Home", href: "/", desc: "dinodewet.tech — Semantic SEO, AI Architecture, and GEO services." },
+                  { label: "Home", href: "/", desc: "dinodewet.co.za — Semantic SEO, AI Architecture, and GEO services." },
                   { label: "About Dino de Wet", href: "/about", desc: "About the semantic SEO strategist and AI architect behind the work." },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}>

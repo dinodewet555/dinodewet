@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dinodewet.tech"),
+  metadataBase: new URL("https://dinodewet.co.za"),
   title: "Dino de Wet | Semantic SEO Web Developer & AI Architect",
   description:
     "Dino de Wet builds high-performance websites and intelligent digital systems combining semantic SEO, Next.js development, and AI architecture for authority, visibility, and growth.",
@@ -44,17 +44,17 @@ export const metadata: Metadata = {
     "LLM Workflows",
     "Technical SEO",
   ],
-  authors: [{ name: "Dino de Wet", url: "https://dinodewet.tech" }],
+  authors: [{ name: "Dino de Wet", url: "https://dinodewet.co.za" }],
   creator: "Dino de Wet",
   publisher: "Dino de Wet",
   alternates: {
-    canonical: "https://dinodewet.tech",
+    canonical: "https://dinodewet.co.za",
   },
   openGraph: {
     title: "Dino de Wet | Semantic SEO Web Developer & AI Architect",
     description:
       "Building high-performance digital systems designed for authority, growth, and modern search.",
-    url: "https://dinodewet.tech",
+    url: "https://dinodewet.co.za",
     siteName: "Dino de Wet",
     type: "website",
     locale: "en_ZA",

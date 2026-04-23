@@ -36,13 +36,13 @@ export const metadata: Metadata = {
     "Cape Town AEO",
   ],
   alternates: {
-    canonical: "https://dinodewet.tech/answer-engine-optimisation-services-south-africa",
+    canonical: "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa",
   },
   openGraph: {
     title: "Answer Engine Optimisation Services South Africa | Dino de Wet",
     description:
       "Answer Engine Optimisation services in South Africa to improve visibility in AI answers, featured snippets, Google AI Overviews, and answer-first search experiences.",
-    url: "https://dinodewet.tech/answer-engine-optimisation-services-south-africa",
+    url: "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa",
     images: [
       {
         url: "/images/answer-engine-optimisation-south-africa.png",
@@ -59,13 +59,13 @@ const pageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa#webpage",
-      "url": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa",
+      "@id": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa#webpage",
+      "url": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa",
       "name": "Answer Engine Optimisation Services South Africa | Dino de Wet",
       "description":
         "Answer Engine Optimisation services in South Africa to improve visibility in AI answers, featured snippets, Google AI Overviews, and answer-first search experiences.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa#service" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa#service" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -73,31 +73,31 @@ const pageSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dinodewet.tech",
+            "item": "https://dinodewet.co.za",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "GEO Services South Africa",
-            "item": "https://dinodewet.tech/geo-services-south-africa",
+            "item": "https://dinodewet.co.za/geo-services-south-africa",
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Answer Engine Optimisation Services South Africa",
-            "item": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa",
+            "item": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa",
           },
         ],
       },
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa#service",
+      "@id": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa#service",
       "name": "Answer Engine Optimisation Services South Africa",
-      "url": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa",
+      "url": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa",
       "description":
         "AEO services helping South African businesses improve visibility in Google AI Overviews, featured snippets, People Also Ask, and AI-driven answer systems through structured content, passage optimisation, and entity clarity.",
-      "provider": { "@id": "https://dinodewet.tech/#person" },
+      "provider": { "@id": "https://dinodewet.co.za/#person" },
       "areaServed": [
         { "@type": "Country", "name": "South Africa" },
         { "@type": "City", "name": "Cape Town" },
@@ -166,7 +166,7 @@ const pageSchema = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://dinodewet.tech/answer-engine-optimisation-services-south-africa#faq",
+      "@id": "https://dinodewet.co.za/answer-engine-optimisation-services-south-africa#faq",
       "mainEntity": [
         {
           "@type": "Question",

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Dino de Wet is a web developer, semantic SEO strategist, and AI architect based in Cape Town, South Africa. He builds digital systems that perform at the intersection of search intelligence, technical development, and AI.",
   alternates: {
-    canonical: "https://dinodewet.tech/about",
+    canonical: "https://dinodewet.co.za/about",
   },
   openGraph: {
     title: "About Dino de Wet | Semantic SEO Strategist & AI Architect",
     description:
       "Dino de Wet is a web developer, semantic SEO strategist, and AI architect focused on building digital systems that perform at a higher level.",
-    url: "https://dinodewet.tech/about",
+    url: "https://dinodewet.co.za/about",
     images: [
       {
         url: "/images/dino-portrait-about.jpg",
@@ -32,30 +32,30 @@ const aboutSchema = {
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://dinodewet.tech/about#webpage",
-      "url": "https://dinodewet.tech/about",
+      "@id": "https://dinodewet.co.za/about#webpage",
+      "url": "https://dinodewet.co.za/about",
       "name": "About Dino de Wet | Semantic SEO Strategist & AI Architect",
       "description": "Dino de Wet is a web developer, semantic SEO strategist, and AI architect based in Cape Town, South Africa.",
-      "isPartOf": { "@id": "https://dinodewet.tech/#website" },
-      "about": { "@id": "https://dinodewet.tech/#person" },
+      "isPartOf": { "@id": "https://dinodewet.co.za/#website" },
+      "about": { "@id": "https://dinodewet.co.za/#person" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.tech" },
-          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://dinodewet.tech/about" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://dinodewet.co.za" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://dinodewet.co.za/about" },
         ],
       },
     },
     {
       "@type": "Person",
-      "@id": "https://dinodewet.tech/#person",
+      "@id": "https://dinodewet.co.za/#person",
       "name": "Dino de Wet",
       "givenName": "Dino",
       "familyName": "de Wet",
-      "url": "https://dinodewet.tech",
+      "url": "https://dinodewet.co.za",
       "image": {
         "@type": "ImageObject",
-        "url": "https://dinodewet.tech/images/dino-portrait-about.jpg",
+        "url": "https://dinodewet.co.za/images/dino-portrait-about.jpg",
         "caption": "Dino de Wet — Semantic SEO Strategist & AI Architect",
       },
       "jobTitle": "Semantic SEO Web Developer & AI Architect",
@@ -66,7 +66,7 @@ const aboutSchema = {
         "addressRegion": "Western Cape",
         "addressCountry": "ZA",
       },
-      "email": "hello@dinodewet.tech",
+      "email": "dinodewet555@gmail.com",
       "knowsAbout": [
         "Semantic SEO Strategy",
         "Next.js Development",
@@ -101,10 +101,10 @@ const aboutSchema = {
           "skills": "Next.js, React, WordPress, TypeScript, Performance Optimisation",
         },
       ],
-      "worksFor": { "@id": "https://dinodewet.tech/#business" },
+      "worksFor": { "@id": "https://dinodewet.co.za/#business" },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://dinodewet.tech/about",
+        "@id": "https://dinodewet.co.za/about",
       },
     },
   ],
@@ -472,7 +472,7 @@ export default function AboutPage() {
                       className="font-heading font-bold text-white"
                       style={{ fontSize: "clamp(1.3rem, 2.8vw, 2rem)", letterSpacing: "-0.02em", lineHeight: 1.3 }}
                     >
-                      &ldquo;dinodewet.tech is the digital authority platform of Dino de Wet, combining semantic SEO, modern web development, and AI architecture to build websites and systems designed for visibility, performance, and long-term growth.&rdquo;
+                      &ldquo;dinodewet.co.za is the digital authority platform of Dino de Wet, combining semantic SEO, modern web development, and AI architecture to build websites and systems designed for visibility, performance, and long-term growth.&rdquo;
                     </blockquote>
                   </div>
                 </div>
