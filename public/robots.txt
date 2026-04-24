@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# Explicitly allow major AI crawlers for citation and retrieval
 User-agent: GPTBot
 Allow: /
 
