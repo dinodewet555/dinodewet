@@ -86,6 +86,55 @@ export const metadata: Metadata = {
   },
 };
 
+const siteSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://dinodewet.co.za/#website",
+      "url": "https://dinodewet.co.za",
+      "name": "Dino de Wet",
+      "description":
+        "Semantic SEO, AI architecture, and high-performance web development for authority, visibility, and growth.",
+      "publisher": { "@id": "https://dinodewet.co.za/#person" },
+      "inLanguage": "en-ZA",
+    },
+    {
+      "@type": "Person",
+      "@id": "https://dinodewet.co.za/#person",
+      "name": "Dino de Wet",
+      "givenName": "Dino",
+      "familyName": "de Wet",
+      "url": "https://dinodewet.co.za",
+      "email": "dinodewet555@gmail.com",
+      "jobTitle": "Semantic SEO Web Developer & AI Architect",
+      "description":
+        "Semantic SEO strategist, AI architect, and web developer based in Cape Town, South Africa.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cape Town",
+        "addressRegion": "Western Cape",
+        "addressCountry": "ZA",
+      },
+      "knowsAbout": [
+        "Semantic SEO",
+        "Generative Engine Optimisation",
+        "Answer Engine Optimisation",
+        "AI Architecture",
+        "Technical SEO",
+        "Next.js Development",
+        "WordPress Development",
+        "Structured Data",
+        "Entity SEO",
+        "Topical Authority",
+        "LLM Workflows",
+        "AI Search Optimisation",
+      ],
+      "sameAs": ["https://dinodewet.co.za"],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -93,10 +142,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-ZA"
       className={`${spaceGrotesk.variable} ${inter.variable}`}
     >
       <body style={{ background: "#050505" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
+        />
         <ClientEffects />
         <Navbar />
         <SmoothScrollProvider>

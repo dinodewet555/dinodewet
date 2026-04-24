@@ -10,7 +10,8 @@
       "Bash(xxd \"/c/Users/farha/Downloads/google518f28c001775372 \\(1\\).html\")",
       "Bash(xxd)",
       "Bash(git -C /c/Users/farha/Downloads/dinodewet status --short)",
-      "Bash(git -C /c/Users/farha/Downloads/dinodewet show HEAD:src/components/ContactForm.tsx)"
+      "Bash(git -C /c/Users/farha/Downloads/dinodewet show HEAD:src/components/ContactForm.tsx)",
+      "Bash(grep -E \"\\\\.\\(tsx?|txt|html\\)$\")"
     ]
   }
 }

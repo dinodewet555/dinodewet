@@ -74,6 +74,10 @@ const articleSchema = {
       "keywords": "semantic SEO, topical authority, entity SEO, search intent, semantic content strategy",
       "articleSection": "Semantic SEO",
       "wordCount": 4200,
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "h2", "h3"],
+      },
     },
     {
       "@type": "WebPage",

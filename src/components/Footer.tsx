@@ -4,11 +4,14 @@ type FooterItem =
   | { type: "section"; label: string }
   | { type: "link"; href: string; label: string };
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+const navItems: FooterItem[] = [
+  { type: "link", href: "/", label: "Home" },
+  { type: "link", href: "/blog", label: "Blog" },
+  { type: "link", href: "/about", label: "About" },
+  { type: "link", href: "/contact", label: "Contact" },
+  { type: "section", label: "Popular Reads" },
+  { type: "link", href: "/blog/what-is-semantic-seo", label: "What Is Semantic SEO?" },
+  { type: "link", href: "/blog/generative-engine-optimisation", label: "GEO Complete Guide" },
 ];
 
 const serviceItems: FooterItem[] = [
@@ -50,16 +53,29 @@ export default function Footer() {
               Navigation
             </p>
             <div className="flex flex-col gap-3">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm transition-colors duration-200 hover:text-white"
-                  style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navItems.map((item) => {
+                if (item.type === "section") {
+                  return (
+                    <p
+                      key={`footer-nav-section-${item.label}`}
+                      className="text-xs font-medium uppercase tracking-widest mt-1"
+                      style={{ color: "#444444", fontFamily: "var(--font-body)", letterSpacing: "0.08em" }}
+                    >
+                      {item.label}
+                    </p>
+                  );
+                }
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-sm transition-colors duration-200 hover:text-white"
+                    style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
@@ -107,9 +123,13 @@ export default function Footer() {
               Get in Touch
             </p>
             <div className="flex flex-col gap-3">
-              <p className="text-sm" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
+              <a
+                href="mailto:dinodewet555@gmail.com"
+                className="text-sm transition-colors duration-200 hover:text-white"
+                style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}
+              >
                 dinodewet555@gmail.com
-              </p>
+              </a>
               <Link
                 href="/contact"
                 className="btn-primary inline-flex items-center justify-center text-sm px-5 py-2.5 rounded-lg font-medium mt-1"

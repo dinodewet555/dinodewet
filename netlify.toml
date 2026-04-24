@@ -1,0 +1,34 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Crawl-critical files must return 200 on both www and apex.
+# These rewrites (status=200) proxy the content from the apex origin
+# so Googlebot gets the file without any redirect chain.
+[[redirects]]
+  from   = "https://www.dinodewet.co.za/robots.txt"
+  to     = "/robots.txt"
+  status = 200
+  force  = true
+
+[[redirects]]
+  from   = "https://www.dinodewet.co.za/sitemap.xml"
+  to     = "/sitemap.xml"
+  status = 200
+  force  = true
+
+[[redirects]]
+  from   = "https://www.dinodewet.co.za/google518f28c001775372.html"
+  to     = "/google518f28c001775372.html"
+  status = 200
+  force  = true
+
+# All other www traffic → permanent 301 to canonical apex domain
+[[redirects]]
+  from   = "https://www.dinodewet.co.za/*"
+  to     = "https://dinodewet.co.za/:splat"
+  status = 301
+  force  = true

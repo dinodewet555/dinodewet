@@ -1,4 +1,26 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow major AI crawlers for citation and retrieval
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://dinodewet.co.za/sitemap.xml

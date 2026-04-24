@@ -80,6 +80,10 @@ const articleSchema = {
         "Generative Engine Optimisation, GEO, GEO vs SEO, AI Search, Answer Engine Optimisation, Google AI Overviews, Passage Ranking, Citation-Ready Content",
       "articleSection": "Generative Engine Optimisation",
       "wordCount": 3800,
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "h2", "h3"],
+      },
     },
     {
       "@type": "WebPage",

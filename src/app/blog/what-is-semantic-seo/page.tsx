@@ -80,6 +80,10 @@ const articleSchema = {
         "Semantic SEO, Entity SEO, Knowledge Graph, Topical Authority, NLP SEO, Entity Attribute Value, Subject Predicate Object",
       "articleSection": "Semantic SEO",
       "wordCount": 3400,
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "h2", "h3"],
+      },
     },
     {
       "@type": "WebPage",
