@@ -1,13 +1,26 @@
 [build]
-  command = "npm run build"
-  publish = ".next"
+command = "npm run build"
+publish = ".next"
 
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+package = "@netlify/plugin-nextjs"
 
-# All www traffic → permanent 301 to canonical apex domain
+# Force SSL - redirect HTTP requests to HTTPS
 [[redirects]]
-  from   = "https://www.dinodewet.co.za/*"
-  to     = "https://dinodewet.co.za/:splat"
+  from = "http://dinodewet.co.za/*"
+  to = "https://dinodewet.co.za/:splat"
   status = 301
-  force  = true
+  force = true
+
+[[redirects]]
+  from = "http://www.dinodewet.co.za/*"
+  to = "https://dinodewet.co.za/:splat"
+  status = 301
+  force = true
+
+# Redirect www apex domain to apex domain (both HTTP and HTTPS)
+[[redirects]]
+  from = "https://www.dinodewet.co.za/*"
+  to = "https://dinodewet.co.za/:splat"
+  status = 301
+  force = true
