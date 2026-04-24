@@ -15,13 +15,6 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        // Explicit Content-Type for robots.txt so no MIME sniffing is needed.
-        source: "/robots.txt",
-        headers: [
-          { key: "Content-Type", value: "text/plain; charset=UTF-8" },
-        ],
-      },
-      {
         source: "/(.*)",
         headers: securityHeaders,
       },
