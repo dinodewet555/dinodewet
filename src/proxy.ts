@@ -16,9 +16,7 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Run on all paths except static assets and crawl-critical files.
-    // robots.txt, sitemap.xml, and google verification must be served from
-    // both www and apex without redirect so crawlers can fetch them.
-    '/((?!_next/static|_next/image|robots\\.txt|sitemap\\.xml|google518f28c001775372\\.html).*)',
+    // Skip Next.js internals; everything else passes through the www→apex redirect check.
+    '/((?!_next/static|_next/image).*)',
   ],
 }
