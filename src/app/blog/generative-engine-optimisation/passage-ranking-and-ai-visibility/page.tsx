@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, ChevronDown, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -146,6 +148,13 @@ export default function PassageRankingPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Generative Engine Optimisation", href: "/blog/generative-engine-optimisation" },
+          { name: "Passage Ranking & AI Visibility", href: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility" },
+        ]}
+      />
 
       <section className="relative pt-40 pb-16 overflow-hidden" style={{ background: "#050505" }}>
         <div className="absolute inset-0 grid-bg" />
@@ -502,6 +511,18 @@ export default function PassageRankingPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        links={[
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation services" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/technical-seo-services", anchor: "technical SEO services" },
+          { href: "/ai-seo", anchor: "AI SEO" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

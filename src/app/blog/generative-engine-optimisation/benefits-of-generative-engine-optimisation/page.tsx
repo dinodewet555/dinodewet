@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -225,6 +227,13 @@ export default function BenefitsOfGEOPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Generative Engine Optimisation", href: "/blog/generative-engine-optimisation" },
+          { name: "Benefits of GEO", href: "/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation" },
+        ]}
+      />
 
       {/* Hero */}
       <section className="relative pt-40 pb-16 overflow-hidden" style={{ background: "#050505" }}>
@@ -438,6 +447,18 @@ export default function BenefitsOfGEOPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        links={[
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation services" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/answer-engine-optimisation-services-south-africa", anchor: "answer engine optimisation services" },
+          { href: "/llm-visibility", anchor: "LLM visibility" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

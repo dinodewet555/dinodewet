@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -522,6 +524,7 @@ export default function AEOServicesSouthAfricaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "Answer Engine Optimisation Services", href: "/answer-engine-optimisation-services-south-africa" }]} />
 
       {/* Hero */}
       <section className="relative pt-40 pb-0 overflow-hidden" style={{ background: "#050505" }}>
@@ -1195,6 +1198,19 @@ export default function AEOServicesSouthAfricaPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        intro="Answer engine optimisation is one layer of a coherent AI search programme — pair it with the disciplines below for compounding results."
+        links={[
+          { href: "/ai-seo", anchor: "AI SEO strategy" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation" },
+          { href: "/llm-visibility", anchor: "LLM visibility consulting" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/contact", anchor: "book an answer engine optimisation consultation" },
+        ]}
+      />
     </>
   );
 }

@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -408,6 +410,7 @@ export default function BlogPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "Blog", href: "/blog" }]} />
 
       {/* Hero */}
       <section className="relative pt-40 pb-28 overflow-hidden" style={{ background: "#050505" }}>
@@ -611,10 +614,12 @@ export default function BlogPage() {
 
                   <div className="px-6 pb-6 flex flex-col flex-1">
                     <h3
-                      className="font-heading font-semibold text-white mb-3"
+                      className="font-heading font-semibold mb-3"
                       style={{ fontSize: "1.1rem", letterSpacing: "-0.01em", lineHeight: 1.35 }}
                     >
-                      {post.title}
+                      <Link href={`/blog/${post.slug}`} className="internal-link">
+                        {post.title}
+                      </Link>
                     </h3>
                     <p
                       className="text-sm mb-5 flex-1"
@@ -1097,6 +1102,19 @@ export default function BlogPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected SEO Solutions"
+        intro="Articles on this blog map directly to live engagements — start where the strongest constraint on your visibility lives today."
+        links={[
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/answer-engine-optimisation-services-south-africa", anchor: "answer engine optimisation services" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation" },
+          { href: "/llm-visibility", anchor: "LLM visibility" },
+        ]}
+      />
     </>
   );
 }

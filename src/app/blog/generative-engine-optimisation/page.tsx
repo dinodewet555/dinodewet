@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, ChevronDown, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -260,6 +262,12 @@ export default function GEOPillarPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Generative Engine Optimisation", href: "/blog/generative-engine-optimisation" },
+        ]}
       />
 
       {/* Article Hero */}
@@ -885,6 +893,19 @@ export default function GEOPillarPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        intro="Implementation engagements for the strategy described in this guide."
+        links={[
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation services" },
+          { href: "/answer-engine-optimisation-services-south-africa", anchor: "answer engine optimisation services" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/llm-visibility", anchor: "LLM visibility" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -530,6 +532,7 @@ export default function AISEOServicesSouthAfricaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "AI SEO Services South Africa", href: "/ai-seo-services-south-africa" }]} />
 
       {/* Hero */}
       <section className="relative pt-40 pb-0 overflow-hidden" style={{ background: "#050505" }}>
@@ -1219,6 +1222,19 @@ export default function AISEOServicesSouthAfricaPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        intro="AI SEO performs best when paired with the foundational and complementary disciplines that feed the same retrieval and answer surfaces."
+        links={[
+          { href: "/ai-seo", anchor: "AI SEO" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation" },
+          { href: "/answer-engine-optimisation-services-south-africa", anchor: "answer engine optimisation services" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/llm-visibility", anchor: "LLM visibility strategy" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+        ]}
+      />
     </>
   );
 }

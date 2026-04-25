@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Search, Layers, Link2, FileText, Zap, Target } from "lucide-react";
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 
 export const metadata: Metadata = {
   title: "Semantic SEO Web Development | Dino de Wet",
@@ -169,6 +171,7 @@ export default function SemanticSEOPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(semanticSeoSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "Semantic SEO", href: "/semantic-seo" }]} />
       {/* Hero */}
       <section className="relative pt-40 pb-0 overflow-hidden" style={{ background: "#050505" }}>
         <div className="absolute inset-0 grid-bg" />
@@ -500,6 +503,19 @@ export default function SemanticSEOPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected SEO Solutions"
+        intro="Semantic SEO is the foundation that makes the rest of the stack work — extend it through these focused engagements."
+        links={[
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/technical-seo-services", anchor: "technical SEO architecture" },
+          { href: "/blog", anchor: "semantic SEO insights" },
+          { href: "/ai-seo", anchor: "AI SEO" },
+        ]}
+      />
     </>
   );
 }

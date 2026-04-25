@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, ChevronDown, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -145,6 +147,13 @@ export default function GEOForSouthAfricaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Generative Engine Optimisation", href: "/blog/generative-engine-optimisation" },
+          { name: "GEO for South African Businesses", href: "/blog/generative-engine-optimisation/geo-for-south-african-businesses" },
+        ]}
+      />
 
       <section className="relative pt-40 pb-16 overflow-hidden" style={{ background: "#050505" }}>
         <div className="absolute inset-0 grid-bg" />
@@ -449,6 +458,18 @@ export default function GEOForSouthAfricaPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        links={[
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/seo-services-cape-town", anchor: "SEO services in Cape Town" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation services" },
+          { href: "/seo-consultant-south-africa", anchor: "SEO consultant in South Africa" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

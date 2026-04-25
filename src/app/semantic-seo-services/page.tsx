@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -480,6 +482,7 @@ export default function SemanticSEOServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "Semantic SEO Services", href: "/semantic-seo-services" }]} />
 
       {/* Hero */}
       <section className="relative pt-40 pb-0 overflow-hidden" style={{ background: "#050505" }}>
@@ -1407,6 +1410,19 @@ export default function SemanticSEOServicesPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected SEO Solutions"
+        intro="Semantic SEO services are most effective when combined with technical foundations and an AI search visibility layer."
+        links={[
+          { href: "/semantic-seo", anchor: "semantic SEO consulting" },
+          { href: "/technical-seo-services", anchor: "technical SEO services" },
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/contact", anchor: "request a semantic SEO consultation" },
+        ]}
+      />
     </>
   );
 }

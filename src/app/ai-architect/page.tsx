@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Brain, Cpu, Workflow, MessageSquare, BarChart3, Layers } from "lucide-react";
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 
 export const metadata: Metadata = {
   title: "AI Architect | Dino de Wet",
@@ -151,6 +153,7 @@ export default function AIArchitectPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aiArchitectSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "AI Architect", href: "/ai-architect" }]} />
       {/* Hero — full bleed AI visual */}
       <section className="relative min-h-[90vh] flex items-end overflow-hidden" style={{ background: "#050505" }}>
         <Image
@@ -410,6 +413,19 @@ export default function AIArchitectPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected Solutions"
+        intro="AI architecture is most effective when it connects to a search-aware web platform and a brand entity that AI systems already recognise."
+        links={[
+          { href: "/web-development-services", anchor: "Next.js web development services" },
+          { href: "/ai-seo", anchor: "AI SEO strategy" },
+          { href: "/llm-visibility", anchor: "LLM visibility systems" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/contact", anchor: "discuss an AI architecture project" },
+        ]}
+      />
     </>
   );
 }

@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -147,6 +149,7 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "About", href: "/about" }]} />
       {/* Hero — editorial triple portrait */}
       <section className="relative pt-36 pb-0 overflow-hidden" style={{ background: "#050505" }}>
         <div className="absolute inset-0 grid-bg" />
@@ -514,6 +517,19 @@ export default function AboutPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Explore Related Services"
+        intro="Pick the engagement that matches the challenge you are working on right now."
+        links={[
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/seo-consultant-south-africa", anchor: "SEO consultant in South Africa" },
+          { href: "/ai-seo", anchor: "AI SEO strategy" },
+          { href: "/semantic-seo", anchor: "semantic SEO consulting" },
+          { href: "/ai-architect", anchor: "AI architect services" },
+          { href: "/contact", anchor: "request a consultation" },
+        ]}
+      />
     </>
   );
 }

@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -235,6 +237,13 @@ export default function WhatIsSemanticSEOPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Semantic SEO", href: "/blog/semantic-seo" },
+          { name: "What Is Semantic SEO?", href: "/blog/semantic-seo/what-is-semantic-seo" },
+        ]}
       />
 
       {/* Hero */}
@@ -576,6 +585,18 @@ export default function WhatIsSemanticSEOPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected SEO Solutions"
+        links={[
+          { href: "/semantic-seo", anchor: "semantic SEO consulting" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/technical-seo-services", anchor: "technical SEO services" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

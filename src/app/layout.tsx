@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ClientEffects from "@/components/ClientEffects";
-import SmoothScrollProvider from "@/components/ClientSmoothScroll";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-heading",

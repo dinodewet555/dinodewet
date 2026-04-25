@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -176,6 +178,13 @@ export default function AIOverviewBrandVisibilityPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Generative Engine Optimisation", href: "/blog/generative-engine-optimisation" },
+          { name: "AI Overview Brand Visibility Factors", href: "/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors" },
+        ]}
       />
 
       {/* Hero */}
@@ -529,6 +538,18 @@ export default function AIOverviewBrandVisibilityPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        links={[
+          { href: "/ai-seo", anchor: "AI SEO" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/llm-visibility", anchor: "LLM visibility" },
+          { href: "/semantic-seo", anchor: "semantic SEO" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

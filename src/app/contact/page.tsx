@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import ContactForm from "@/components/ContactForm";
 import Image from "next/image";
 import { Mail, MessageSquare, Globe } from "lucide-react";
@@ -90,6 +92,7 @@ export default function ContactPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "Contact", href: "/contact" }]} />
       {/* Hero */}
       <section className="relative pt-40 pb-20 overflow-hidden" style={{ background: "#050505" }}>
         <div className="absolute inset-0 grid-bg" />
@@ -252,6 +255,19 @@ export default function ContactPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Explore Related Services"
+        intro="Browse the most-requested engagements before scoping a project."
+        links={[
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-seo-services-south-africa", anchor: "AI SEO services in South Africa" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/technical-seo-services", anchor: "technical SEO services" },
+          { href: "/web-development-services", anchor: "Next.js web development services" },
+          { href: "/ai-architect", anchor: "AI architect services" },
+        ]}
+      />
     </>
   );
 }

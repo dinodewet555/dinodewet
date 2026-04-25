@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -509,6 +511,7 @@ export default function WebDevelopmentServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
       />
+      <Breadcrumbs trail={[{ name: "Web Development Services", href: "/web-development-services" }]} />
 
       {/* Hero */}
       <section className="relative pt-40 pb-0 overflow-hidden" style={{ background: "#050505" }}>
@@ -1496,6 +1499,19 @@ export default function WebDevelopmentServicesPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected SEO Solutions"
+        intro="Building a Next.js or WordPress site is most valuable when paired with the SEO and AI architecture work that turns the build into compounding visibility."
+        links={[
+          { href: "/technical-seo-services", anchor: "technical SEO implementation" },
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/ai-architect", anchor: "AI architecture consulting" },
+          { href: "/contact", anchor: "build an SEO-ready website" },
+          { href: "/blog", anchor: "web development and SEO insights" },
+        ]}
+      />
     </>
   );
 }

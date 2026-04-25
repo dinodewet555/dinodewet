@@ -1,4 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import { ArrowRight, Clock, Calendar, ChevronDown, BookOpen } from "lucide-react";
 import type { Metadata } from "next";
@@ -163,6 +165,13 @@ export default function HowAIChoosesSourcesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Generative Engine Optimisation", href: "/blog/generative-engine-optimisation" },
+          { name: "How AI Search Engines Choose Sources", href: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources" },
+        ]}
       />
 
       <section className="relative pt-40 pb-16 overflow-hidden" style={{ background: "#050505" }}>
@@ -499,6 +508,18 @@ export default function HowAIChoosesSourcesPage() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Build Your AI Search Visibility"
+        links={[
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/generative-engine-optimisation", anchor: "generative engine optimisation services" },
+          { href: "/llm-visibility", anchor: "LLM visibility" },
+          { href: "/answer-engine-optimisation-services-south-africa", anchor: "answer engine optimisation services" },
+          { href: "/semantic-seo", anchor: "semantic SEO" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }

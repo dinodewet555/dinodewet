@@ -4,6 +4,7 @@ import SplitReveal from "@/components/SplitReveal";
 import ImageReveal from "@/components/ImageReveal";
 import TiltCard from "@/components/TiltCard";
 import GSAPReveal from "@/components/GSAPReveal";
+import RelatedServices from "@/components/RelatedServices";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Brain, Search, Code, Globe, Cpu, LineChart } from "lucide-react";
@@ -721,6 +722,19 @@ export default function HomePage() {
           </SplitReveal>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Explore Related Services"
+        intro="Where to start depends on the strongest constraint on your visibility today — pick the entry point that matches it."
+        links={[
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-seo", anchor: "AI SEO strategy" },
+          { href: "/semantic-seo", anchor: "semantic SEO consulting" },
+          { href: "/answer-engine-optimisation-services-south-africa", anchor: "answer engine optimisation" },
+          { href: "/ai-architect", anchor: "AI architect services" },
+          { href: "/blog", anchor: "SEO and AI search insights" },
+        ]}
+      />
     </>
   );
 }

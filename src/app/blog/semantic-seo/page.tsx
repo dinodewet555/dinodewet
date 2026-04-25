@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedServices from "@/components/RelatedServices";
 
 export const metadata: Metadata = {
   title: "Semantic SEO Articles | Dino de Wet",
@@ -72,18 +74,15 @@ export default function SemanticSEOCategory() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categorySchema) }}
       />
+      <Breadcrumbs
+        trail={[
+          { name: "Blog", href: "/blog" },
+          { name: "Semantic SEO", href: "/blog/semantic-seo" },
+        ]}
+      />
 
       <section style={{ background: "#050505", minHeight: "70vh" }}>
         <div className="max-w-4xl mx-auto px-6 lg:px-8 pt-20 pb-16">
-          {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-xs mb-10" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
-            <span>/</span>
-            <span className="text-white">Semantic SEO</span>
-          </nav>
-
           <p className="text-xs font-medium uppercase tracking-widest mb-4" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
             Category
           </p>
@@ -142,6 +141,18 @@ export default function SemanticSEOCategory() {
           </div>
         </div>
       </section>
+
+      <RelatedServices
+        heading="Connected SEO Solutions"
+        links={[
+          { href: "/semantic-seo", anchor: "semantic SEO consulting" },
+          { href: "/semantic-seo-services", anchor: "semantic SEO services" },
+          { href: "/seo-services-south-africa", anchor: "SEO services in South Africa" },
+          { href: "/ai-search-engine-optimisation", anchor: "AI search engine optimisation" },
+          { href: "/technical-seo-services", anchor: "technical SEO services" },
+          { href: "/blog", anchor: "SEO blog" },
+        ]}
+      />
     </>
   );
 }
