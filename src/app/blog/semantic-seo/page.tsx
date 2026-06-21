@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedServices from "@/components/RelatedServices";
+import { posts } from "@/content/posts";
 
 export const metadata: Metadata = {
   title: "Semantic SEO Articles | Dino de Wet",
@@ -50,22 +51,16 @@ const categorySchema = {
   ],
 };
 
-const articles = [
-  {
-    href: "/blog/semantic-seo/what-is-semantic-seo",
-    title: "Semantic SEO: What It Is and 10 Tips for Success",
-    description:
-      "Learn what semantic SEO is, why it matters, and 10 practical tips to improve topical authority, entity clarity, and search visibility.",
-    readTime: "14 min",
-  },
-  {
-    href: "/blog/what-is-semantic-seo",
-    title: "What Is Semantic SEO? A Complete Guide",
-    description:
-      "Semantic SEO builds visibility around entities, attributes, and relationships — not just keywords. A deep guide to Knowledge Graphs, NLP, and topical authority.",
-    readTime: "12 min",
-  },
-];
+// Derived from the central registry so the hub always lists the full, current
+// Semantic SEO cluster and never drifts from /blog or the sitemap.
+const articles = posts
+  .filter((p) => p.category === "Semantic SEO")
+  .map((p) => ({
+    href: `/blog/${p.slug}`,
+    title: p.title,
+    description: p.summary,
+    readTime: p.readTime,
+  }));
 
 export default function SemanticSEOCategory() {
   return (
@@ -118,7 +113,7 @@ export default function SemanticSEOCategory() {
                       {description}
                     </p>
                     <p className="text-xs mt-3" style={{ color: "#555", fontFamily: "var(--font-body)" }}>
-                      {readTime} read
+                      {readTime}
                     </p>
                   </div>
                   <ArrowRight size={18} className="shrink-0 mt-1 text-white opacity-0 group-hover:opacity-100 transition-opacity" />

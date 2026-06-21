@@ -538,6 +538,7 @@ export default function WhatIsSemanticSEOPage() {
               </p>
               <div className="flex flex-col gap-3">
                 {[
+                  { label: "Entity SEO and the Knowledge Graph", href: "/blog/semantic-seo/entity-seo-knowledge-graph", desc: "How to optimise for entities, the entity-attribute-value model, and Google's Knowledge Graph." },
                   { label: "Semantic SEO Web Development Services", href: "/semantic-seo", desc: "Websites built for topical depth, crawlability, entity clarity, and long-term visibility." },
                   { label: "What Is Generative Engine Optimisation?", href: "/blog/generative-engine-optimisation", desc: "How GEO extends semantic SEO into AI-driven search environments." },
                   { label: "SEO vs GEO: The Core Difference", href: "/blog/generative-engine-optimisation/geo-vs-seo", desc: "Why SEO drives clicks and GEO drives AI citation visibility." },

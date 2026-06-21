@@ -4,7 +4,15 @@ export type Crumb = { name: string; href: string };
 
 const SITE = "https://dinodewet.co.za";
 
-export default function Breadcrumbs({ trail }: { trail: Crumb[] }) {
+export default function Breadcrumbs({
+  trail,
+  emitSchema = true,
+}: {
+  trail: Crumb[];
+  /** Set false when a page already emits its BreadcrumbList in a larger @graph
+   * (e.g. articles via buildArticleSchema) to avoid duplicate breadcrumb JSON-LD. */
+  emitSchema?: boolean;
+}) {
   const fullTrail: Crumb[] = trail[0]?.href === "/" ? trail : [{ name: "Home", href: "/" }, ...trail];
 
   const jsonLd = {
@@ -20,10 +28,12 @@ export default function Breadcrumbs({ trail }: { trail: Crumb[] }) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {emitSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
       <nav
         aria-label="Breadcrumb"
         className="max-w-7xl mx-auto px-6 lg:px-8 pt-24 pb-2"

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 const projectTypes = [
   "Semantic SEO Website",
@@ -22,6 +23,7 @@ export default function ContactForm() {
     business: "",
     projectType: "",
     message: "",
+    company_website: "", // honeypot — kept empty by real users
   });
 
   const handleChange = (
@@ -43,7 +45,7 @@ export default function ContactForm() {
       if (!res.ok) throw new Error("Failed to send");
       setSubmitted(true);
     } catch {
-      setError("Something went wrong. Please email dinodewet555@gmail.com directly.");
+      setError(`Something went wrong. Please email ${CONTACT_EMAIL} directly.`);
     } finally {
       setLoading(false);
     }
@@ -92,6 +94,20 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      {/* Honeypot: hidden from users, catches bots. */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: 1, height: 1, overflow: "hidden" }}>
+        <label htmlFor="company_website">Company website (leave blank)</label>
+        <input
+          id="company_website"
+          type="text"
+          name="company_website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={form.company_website}
+          onChange={handleChange}
+        />
+      </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label

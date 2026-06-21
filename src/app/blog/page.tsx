@@ -1,6 +1,9 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedServices from "@/components/RelatedServices";
+import BlogExplorer from "@/components/BlogExplorer";
+import SubscribeForm from "@/components/SubscribeForm";
+import { posts, getFeaturedPost, blogPostingNodes } from "@/content/posts";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -8,12 +11,9 @@ import {
   Clock,
   Calendar,
   ChevronDown,
-  Search,
   Tag,
-  TrendingUp,
   Zap,
   RefreshCw,
-  CheckCircle,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -63,96 +63,7 @@ const pageSchema = {
       "description":
         "Guides, tutorials, and frameworks covering semantic SEO, entity-based optimisation, web development, content strategy, and AI search.",
       "publisher": { "@id": "https://dinodewet.co.za/#person" },
-      "blogPost": [
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/what-is-semantic-seo#article",
-          "headline": "What Is Semantic SEO? A Complete Guide",
-          "url": "https://dinodewet.co.za/blog/what-is-semantic-seo",
-          "datePublished": "2026-04-22",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation#article",
-          "headline": "What Is Generative Engine Optimisation? A Complete Guide",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo#article",
-          "headline": "SEO vs GEO: The Core Difference",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-vs-seo",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources#article",
-          "headline": "How AI Search Engines Choose Sources",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready#article",
-          "headline": "What Makes Content Citation-Ready for AI Search?",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/what-makes-content-citation-ready",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo#article",
-          "headline": "How Google AI Overviews Change SEO and GEO",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/google-ai-overviews-and-geo",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses#article",
-          "headline": "Generative Engine Optimisation for South African Businesses",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/geo-for-south-african-businesses",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility#article",
-          "headline": "How Passage Ranking Affects AI Search Visibility",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation#article",
-          "headline": "The Benefits of Generative Engine Optimisation (GEO)",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors#article",
-          "headline": "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
-          "url": "https://dinodewet.co.za/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://dinodewet.co.za/blog/semantic-seo/what-is-semantic-seo#article",
-          "headline": "Semantic SEO: What It Is and 10 Tips for Success",
-          "url": "https://dinodewet.co.za/blog/semantic-seo/what-is-semantic-seo",
-          "datePublished": "2026-04-23",
-          "author": { "@id": "https://dinodewet.co.za/#person" },
-        },
-      ],
+      "blogPost": blogPostingNodes(),
     },
     {
       "@type": "WebPage",
@@ -210,119 +121,6 @@ const pageSchema = {
     },
   ],
 };
-
-const posts = [
-  {
-    slug: "what-is-semantic-seo",
-    title: "What Is Semantic SEO? A Complete Guide",
-    category: "Semantic SEO",
-    summary:
-      "Semantic SEO builds search visibility around entities, attributes, and relationships rather than keywords. This guide explains how it works, why it outperforms traditional keyword SEO, and how to implement it using entity-first content architecture.",
-    date: "22 April 2026",
-    readTime: "12 min read",
-    featured: true,
-  },
-  {
-    slug: "generative-engine-optimisation",
-    title: "What Is Generative Engine Optimisation? A Complete Guide",
-    category: "Generative Engine Optimisation",
-    summary:
-      "Generative Engine Optimisation (GEO) is the practice of structuring content so AI-powered search engines cite, quote, and recommend your brand. This guide covers the full framework — from AI retrieval mechanics to citation-ready content and passage ranking.",
-    date: "23 April 2026",
-    readTime: "14 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/geo-vs-seo",
-    title: "SEO vs GEO: The Core Difference",
-    category: "Generative Engine Optimisation",
-    summary:
-      "SEO relies on ranking signals to place pages in search results. GEO relies on content quality, structure, and extractability to determine whether content appears in AI-generated answers. Learn the core difference and why businesses need both.",
-    date: "23 April 2026",
-    readTime: "12 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/how-ai-search-engines-choose-sources",
-    title: "How AI Search Engines Choose Sources",
-    category: "Generative Engine Optimisation",
-    summary:
-      "AI search engines like ChatGPT, Perplexity, and Google AI Overviews apply specific retrieval models to select citation sources. Learn the six core signals and how to optimise for each.",
-    date: "23 April 2026",
-    readTime: "10 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/what-makes-content-citation-ready",
-    title: "What Makes Content Citation-Ready for AI Search?",
-    category: "Generative Engine Optimisation",
-    summary:
-      "Citation-ready content has seven structural properties that AI retrieval systems look for. Learn each property, how to apply it, and how to audit your existing content against the full checklist.",
-    date: "23 April 2026",
-    readTime: "9 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/google-ai-overviews-and-geo",
-    title: "How Google AI Overviews Change SEO and GEO",
-    category: "Generative Engine Optimisation",
-    summary:
-      "Google AI Overviews appear above all organic results for millions of queries. Learn how they work, how they affect traffic, and the specific optimisation changes required to earn AI Overview citation.",
-    date: "23 April 2026",
-    readTime: "10 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/geo-for-south-african-businesses",
-    title: "Generative Engine Optimisation for South African Businesses",
-    category: "Generative Engine Optimisation",
-    summary:
-      "Most South African businesses are not yet implementing GEO. Learn how to build local entity signals, target South African-specific queries, and capture first-mover AI citation advantage.",
-    date: "23 April 2026",
-    readTime: "9 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/passage-ranking-and-ai-visibility",
-    title: "How Passage Ranking Affects AI Search Visibility",
-    category: "Generative Engine Optimisation",
-    summary:
-      "Google Passage Ranking indexes individual paragraphs independently — and the same mechanism powers AI retrieval. Learn how to structure content that benefits from both simultaneously.",
-    date: "23 April 2026",
-    readTime: "9 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/benefits-of-generative-engine-optimisation",
-    title: "The Benefits of Generative Engine Optimisation (GEO)",
-    category: "Generative Engine Optimisation",
-    summary:
-      "GEO helps businesses improve visibility in AI-generated answers, strengthen authority in emerging search environments, and compete more effectively for high-intent discovery. A complete guide to the ten core benefits.",
-    date: "23 April 2026",
-    readTime: "11 min read",
-    featured: false,
-  },
-  {
-    slug: "generative-engine-optimisation/ai-overview-brand-visibility-factors",
-    title: "AI Overview Brand Visibility Factors: What 75,000 Brands Reveal",
-    category: "Generative Engine Optimisation",
-    summary:
-      "Based on an analysis of 75,000 brands, the strongest factor behind AI Overview brand mentions was branded web mentions — not backlinks or ad spend. Learn the findings and what businesses should do.",
-    date: "23 April 2026",
-    readTime: "11 min read",
-    featured: false,
-  },
-  {
-    slug: "semantic-seo/what-is-semantic-seo",
-    title: "Semantic SEO: What It Is and 10 Tips for Success",
-    category: "Semantic SEO",
-    summary:
-      "Semantic SEO builds content around entities, attributes, relationships, and search intent. This guide explains what it is, why it matters, and 10 practical tips to improve topical authority, entity clarity, and search visibility.",
-    date: "23 April 2026",
-    readTime: "14 min read",
-    featured: false,
-  },
-];
 
 const categories = [
   {
@@ -401,7 +199,7 @@ const faqs = [
 ];
 
 export default function BlogPage() {
-  const featuredPost = posts.find((p) => p.featured);
+  const featuredPost = getFeaturedPost();
   const latestPosts = posts;
 
   return (
@@ -520,7 +318,7 @@ export default function BlogPage() {
                       </Link>
                       <span className="flex items-center gap-1.5 text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
                         <Calendar size={12} />
-                        {featuredPost.date}
+                        {featuredPost.dateDisplay}
                       </span>
                     </div>
                   </div>
@@ -582,69 +380,9 @@ export default function BlogPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {latestPosts.map((post, i) => (
-              <AnimatedSection key={post.slug} delay={i * 80}>
-                <div
-                  className="card-hover rounded-xl border h-full flex flex-col overflow-hidden"
-                  style={{ background: "rgba(255,255,255,0.02)", borderColor: "#1f1f1f" }}
-                >
-                  {/* Category bar */}
-                  <div
-                    className="px-6 pt-6 pb-0"
-                  >
-                    <div className="flex items-center justify-between mb-4">
-                      <span
-                        className="text-xs font-medium uppercase tracking-widest px-2.5 py-1 rounded border"
-                        style={{
-                          color: "#a1a1a1",
-                          borderColor: "#2a2a2a",
-                          background: "rgba(255,255,255,0.03)",
-                          fontFamily: "var(--font-body)",
-                        }}
-                      >
-                        {post.category}
-                      </span>
-                      <span className="flex items-center gap-1.5 text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-                        <Clock size={11} />
-                        {post.readTime}
-                      </span>
-                    </div>
-                  </div>
-
-                  <div className="px-6 pb-6 flex flex-col flex-1">
-                    <h3
-                      className="font-heading font-semibold mb-3"
-                      style={{ fontSize: "1.1rem", letterSpacing: "-0.01em", lineHeight: 1.35 }}
-                    >
-                      <Link href={`/blog/${post.slug}`} className="internal-link">
-                        {post.title}
-                      </Link>
-                    </h3>
-                    <p
-                      className="text-sm mb-5 flex-1"
-                      style={{ color: "#a1a1a1", fontFamily: "var(--font-body)", lineHeight: 1.7 }}
-                    >
-                      {post.summary}
-                    </p>
-                    <div className="flex items-center justify-between pt-4" style={{ borderTop: "1px solid #1f1f1f" }}>
-                      <span className="flex items-center gap-1.5 text-xs" style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}>
-                        <Calendar size={11} />
-                        {post.date}
-                      </span>
-                      <Link
-                        href={`/blog/${post.slug}`}
-                        className="inline-flex items-center gap-1.5 text-sm font-medium text-white"
-                        style={{ fontFamily: "var(--font-body)" }}
-                      >
-                        Read More <ArrowRight size={13} />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
+          <AnimatedSection delay={100}>
+            <BlogExplorer posts={latestPosts} />
+          </AnimatedSection>
         </div>
       </section>
 
@@ -777,70 +515,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Search */}
-      <section
-        className="py-28"
-        style={{ background: "#0d0d0d", borderTop: "1px solid #1f1f1f", borderBottom: "1px solid #1f1f1f" }}
-      >
-        <div className="max-w-3xl mx-auto px-6 lg:px-8">
-          <AnimatedSection>
-            <p
-              className="text-xs font-medium uppercase tracking-widest mb-4"
-              style={{ color: "#a1a1a1", fontFamily: "var(--font-body)" }}
-            >
-              Search
-            </p>
-            <h2
-              className="font-heading font-bold text-white mb-4"
-              style={{
-                fontSize: "clamp(1.8rem, 4vw, 3rem)",
-                letterSpacing: "-0.02em",
-                lineHeight: 1.15,
-              }}
-            >
-              Find Topics Fast
-            </h2>
-            <p
-              className="mb-10"
-              style={{ color: "#a1a1a1", lineHeight: 1.8, fontSize: "1rem", fontFamily: "var(--font-body)" }}
-            >
-              Browse by keyword, filter by category, or sort by date to find exactly what you need.
-            </p>
-
-            {/* Search bar */}
-            <div
-              className="flex items-center gap-3 rounded-xl border px-5 py-4 mb-6"
-              style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}
-            >
-              <Search size={16} color="#a1a1a1" className="flex-shrink-0" />
-              <p className="text-sm" style={{ color: "#3a3a3a", fontFamily: "var(--font-body)" }}>
-                Search articles — semantic SEO, web development, entity optimisation...
-              </p>
-            </div>
-
-            {/* Filters */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {[
-                { label: "Filter by category", placeholder: "All Categories" },
-                { label: "Filter by service type", placeholder: "All Services" },
-                { label: "Sort by", placeholder: "Newest First" },
-              ].map((filter) => (
-                <div
-                  key={filter.label}
-                  className="flex items-center justify-between gap-2 rounded-lg border px-4 py-3"
-                  style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}
-                >
-                  <p className="text-xs" style={{ color: "#3a3a3a", fontFamily: "var(--font-body)" }}>
-                    {filter.placeholder}
-                  </p>
-                  <ChevronDown size={13} color="#3a3a3a" />
-                </div>
-              ))}
-            </div>
-          </AnimatedSection>
-        </div>
-      </section>
-
       {/* Why Read */}
       <section className="py-28 relative" style={{ background: "#050505" }}>
         <div className="absolute inset-0 grid-bg opacity-40" />
@@ -929,26 +603,7 @@ export default function BlogPage() {
               Monthly updates covering new guides, strategy shifts, and practical frameworks. No filler content, no spam — only articles worth reading.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <div
-                className="flex-1 rounded-lg border px-5 py-3.5 text-left"
-                style={{ borderColor: "#1f1f1f", background: "rgba(255,255,255,0.02)" }}
-              >
-                <p className="text-sm" style={{ color: "#3a3a3a", fontFamily: "var(--font-body)" }}>
-                  your@email.com
-                </p>
-              </div>
-              <button
-                type="button"
-                className="btn-primary inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg text-sm font-medium flex-shrink-0"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Subscribe <ArrowRight size={14} />
-              </button>
-            </div>
-            <p className="mt-4 text-xs" style={{ color: "#3a3a3a", fontFamily: "var(--font-body)" }}>
-              Monthly updates only. Unsubscribe any time.
-            </p>
+            <SubscribeForm />
           </AnimatedSection>
         </div>
       </section>

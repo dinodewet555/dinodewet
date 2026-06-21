@@ -7,11 +7,18 @@
   --text-muted: #a1a1a1;
   --border: #1f1f1f;
   --border-light: #2a2a2a;
+  --faint: #3a3a3a;
 }
 
 @theme inline {
   --color-background: var(--bg-primary);
   --color-foreground: var(--text-white);
+  /* Tokenised palette — primitives reference these instead of raw hex. */
+  --color-panel: var(--bg-panel);
+  --color-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-faint: var(--faint);
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
 }

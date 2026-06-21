@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { posts, postUrl } from "@/content/posts";
 
 const BASE = "https://dinodewet.co.za";
 
@@ -35,26 +36,35 @@ const servicePages: { path: string; priority: Priority; freq: Freq; date: Date }
   { path: "/seo-services-cape-town", priority: 0.85, freq: "monthly", date: lastUpdate },
 ];
 
-const blogPosts: { path: string; priority: Priority; freq: Freq; date: Date }[] = [
-  { path: "/blog/what-is-semantic-seo", priority: 0.8, freq: "monthly", date: blogPublished },
+// Blog hub/listing pages that are not individual articles (articles come from
+// the central registry below).
+const blogHubs: { path: string; priority: Priority; freq: Freq; date: Date }[] = [
   { path: "/blog/semantic-seo", priority: 0.7, freq: "monthly", date: blogPublished },
-  { path: "/blog/semantic-seo/what-is-semantic-seo", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation", priority: 0.85, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/geo-vs-seo", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/how-ai-search-engines-choose-sources", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/what-makes-content-citation-ready", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/google-ai-overviews-and-geo", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/geo-for-south-african-businesses", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/passage-ranking-and-ai-visibility", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/benefits-of-generative-engine-optimisation", priority: 0.75, freq: "monthly", date: blogPublished },
-  { path: "/blog/generative-engine-optimisation/ai-overview-brand-visibility-factors", priority: 0.75, freq: "monthly", date: blogPublished },
 ];
 
+// Individual articles are derived from the single source of truth in
+// src/content/posts.ts so the sitemap can never drift from the /blog index.
+const blogPosts = posts.map((p) => ({
+  url: postUrl(p.slug),
+  date: new Date(p.publishedISO),
+  priority: p.priority ?? 0.75,
+  freq: "monthly" as Freq,
+}));
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [...corePages, ...servicePages, ...blogPosts].map((p) => ({
+  const staticEntries = [...corePages, ...servicePages, ...blogHubs].map((p) => ({
     url: `${BASE}${p.path}`,
     lastModified: p.date,
     changeFrequency: p.freq,
     priority: p.priority,
   }));
+
+  const postEntries = blogPosts.map((p) => ({
+    url: p.url,
+    lastModified: p.date,
+    changeFrequency: p.freq,
+    priority: p.priority,
+  }));
+
+  return [...staticEntries, ...postEntries];
 }
